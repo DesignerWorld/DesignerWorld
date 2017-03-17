@@ -1,27 +1,27 @@
-<!--
+﻿<!--
 Author: W3layouts
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE HTML>
-<html>
+<html ng-app="">
 <head>
-<title>Inventive Design a Interior Architects Multipurpose Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title>SAZ Interiors - we design your home</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Inventive Design Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<meta name="keywords" content="Interior Design, Furniture Manufacture, Living room Design, Dining room Design, Bedroom Design, Toilet Design" />
 <script type="applisalonion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <link href="css/iconeffects.css" rel='stylesheet' type='text/css' />
-<link href="css/style.css" rel='stylesheet' type='text/css' />	
+<link href="css/style.css" rel='stylesheet' type='text/css' />
 <link rel="stylesheet" href="css/leoslider.css">
 <link href="css/iconeffects.css" rel='stylesheet' type='text/css' />
 <script src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/angularjs/1.4.8/angular.min.js"></script>
 <!--/web-font-->
 	<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
@@ -29,15 +29,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--/script-->
 <script type="text/javascript">
 			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
+				$(".scroll").click(function(event){
 					event.preventDefault();
 					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
 				});
 			});
 </script>
 <!-- swipe box js -->
-	<script src="js/jquery.leoslider.js"></script> 
-	    <script src="js/main.js"></script> 
+	<script src="js/jquery.leoslider.js"></script>
+	    <script src="js/main.js"></script>
 <!-- //swipe box js -->
 
 
@@ -51,18 +51,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<p class="phonenum"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 097682 40771 </p> -->
 				<div class="social-icons">
 					<ul>
-						<li><a href="#"><i class="facebook"> </i></a></li>
-						<li><a href="#"><i class="twitter"> </i></a></li>
-						<li><a href="#"><i class="google-plus"> </i></a></li>	
-						<li><a href="#"><i class="dribble"> </i></a></li>										
+						<li><a href="http://facebook.com/share.php?"><i class="facebook"> </i></a></li>
+						<li><a href="http://twitter.com/intent"><i class="twitter"> </i></a></li>
+						<li><a href="http://plus.google.com/share"><i class="google-plus"> </i></a></li>
 					</ul>
 				</div>
 				<div class="clearfix"></div>
 			</div>
 			</div>
-			<div class="header-top">
-			<div class="logo"><a href="#Index"><h1><span>S</span>az <span class="two">I</span>nteriors</h1></a></div>
-						<nav class="navbar navbar-default">
+			<div class="header-top" id="index">
+			<div class="logo"><a href="#index"><h1><span>S</span>AZ <span class="two">I</span>NTERIORS</h1></a></div>
+						<nav class="navbar navbar-fixed navbar-default">
 					  <div class="container-fluid">
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
@@ -76,19 +75,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			  <ul class="nav navbar-nav">
-				<li><a class="active" href="Index">Home<span class="sr-only">(current)</span></a></li>
-				<li><a class="scroll" href="#About">About</a></li>
-				<li><a href="#Services">Services</a></li>
+				<li><a class="active" href="#index">Home<span class="sr-only">(current)</span></a></li>
+				<li><a class="scroll" href="#about">About</a></li>
+				<li><a href="#whyUs">Why us</a></li>
+				<li><a href="#services">Services</a></li>
 				<!--<li class="dropdown">
 					<a href="gallery.html" class="dropdown-toggle" data-toggle="dropdown">Gallery<span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
 						<li><a href="gallery.html">Gallery 1</a></li>
 						<li><a href="gallery1.html">Gallery 2</a></li>
-						<li><a href="gallery2.html">Gallery 3</a></li>  
+						<li><a href="gallery2.html">Gallery 3</a></li>
 					</ul>
 				</li>
 				<li><a href="news.html">News</a></li>-->
-				<li><a href="#Contact">Contact</a></li>
+				<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -97,8 +97,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	 <section id="line-slider">
             <div class="leoslider">
-			
-			
+
+
               <ul class="slides">
                 <li>
                    <img src="images/1.jpg" alt=" " />
@@ -209,24 +209,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="about" id="about">
 					<div class="col-md-5 ab-left">
 								<div class="btm-right">
-									<a href="#">
+									<a href="#about">
 										<img src="images/c5.jpg" alt="" class="img-responsive">
 										<div class="captn">
-											<h4>Living</h4>
-															
+											<h4>Our project</h4>
+
 										</div>
-									</a>	
+									</a>
 							</div>
 
-							
+
 						</div>
 
 		<div class="col-md-7 ab-right">
 					  <div class="col-bottom two">
 					        <h2 class="tittle"><span>SAZ</span> Interiors</h2>
-							<h4>We Build your home </h4>
-							
-							
+							<h4>Interior design | Furniture manufacturers | Consultants</h4>
 						</div>
 
 		</div>
@@ -234,11 +232,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
  <!-- //about-type-grid -->
 <!-- service-type-grid -->
-<div class="service" id="services">
+<div class="service" id="whyUs">
 			<div class="feature-grids">
-				
+
 				<div class="col-md-7 feature-grid">
-				<h3 class="tittle three">Our <span>Services</span></h3>
+				<h3 class="tittle three">Why <span>Us?</span></h3>
 					<div class="feature">
 						<div class="features-item sans-shadow text-center">
 							<div class="features-icon">
@@ -247,8 +245,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 							<div class="features-info">
-								<h4>INTERIOR DESIGN</h4>
-							<p>abc</p>
+								<h4>Design</h4>
+							<p>for your standard</p>
 							</div>
 						</div>
 					</div>
@@ -260,8 +258,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 							<div class="features-info">
-								<h4>NEUTRAL COLORS</h4>
-								<p>abc</p>
+								<h4>Pricing</h4>
+								<p>best in market</p>
 							</div>
 						</div>
 					</div>
@@ -273,8 +271,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 							<div class="features-info">
-								<h4>ARTWORK</h4>
-								<p>abc</p>
+								<h4>Quality</h4>
+								<p>best in class</p>
 							</div>
 						</div>
 					</div>
@@ -286,8 +284,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 							<div class="features-info">
-								<h4>ARTISTIC APARTMENTS</h4>
-								<p>abc</p>
+								<h4>Warranty</h4>
+								<p>you can trust</p>
 							</div>
 						</div>
 					</div>
@@ -296,13 +294,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 				<div class="col-md-5 feature-grid-image">
 					<div class="btm-right">
-									<a href="#">
+									<a href="#whyUs">
 										<img src="images/serve.jpg" alt="" class="img-responsive">
 										<div class="captn">
-											<h4>Inventive Design</h4>
-															
+											<h4>Our project</h4>
+
 										</div>
-									</a>	
+									</a>
 							</div>
 				</div>
 				<div class="clearfix"></div>
@@ -314,7 +312,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="news-section" id="news">
 			<div class="container">
 				 <h3 class="tittle">Recent <span>News</span></h3>
-				<div class="news-left">			
+				<div class="news-left">
 					<div class="col-md-6 col-news-right">
 						<div class="col-news-top">
 							<a href="single.html" class="date-in">
@@ -333,7 +331,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem  </p>
 							<a href="single.html" class="hvr-shutter-in-horizontal">Read More</a>
 						</div>
-						</div>	
+						</div>
 						<div class="col-news-top">
 							<a href="single.html" class="date-in">
 								<img class="img-responsive mix-in" src="images/c2.jpg" alt="">
@@ -351,7 +349,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem  </p>
 							<a href="single.html" class="hvr-shutter-in-horizontal">Read More</a>
 						</div>
-						</div>	
+						</div>
 					</div>
 					<div class="col-md-6 col-news">
 						<div class="col-bottom two">
@@ -360,7 +358,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<a href="single.html" class="hvr-shutter-in-horizontal">Read More</a>
 						</div>
 						<div class="col-news-top">
-						
+
 							<a href="single.html" class="date-in">
 								<img class="img-responsive mix-in" src="images/c3.jpg" alt="">
 								<div class="month-in">
@@ -372,8 +370,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</a>
 							<div class="clearfix"> </div>
-							
-						</div>					
+
+						</div>
 						<div class="col-news-top">
 							<div class="col-bottom">
 							<h4>We design your home</h4>
@@ -392,7 +390,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</a>
 							<div class="clearfix"> </div>
 						</div>
-					
+
 					</div>
 					<div class="clearfix"> </div>
 				</div>
@@ -405,7 +403,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!--start-banner-bottom-->
    <!--/reviews-->
-	
+
 <!--//reviews-->
 
 
@@ -414,52 +412,40 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //gallery -->
 
   <!--bottom-->
-	<div class="product" id="product">
+	<div class="product" id="services">
 		<div class="container">
 			<div class="product-top">
-				
+
 				<div class="col-md-12 product-right heading">
-				<h3 class="tittle new">New <span>Arrivals</span></h3>
-					
+				<h3 class="tittle new">Our <span>Services</span></h3>
+
 					<div class="prdt">
-						
-<div class="col-md-4 prdt-left">
+
+<div class="col-md-6 prdt-left">
 							<div class="btm-right1">
-									<a href="#">
-										<img src="images/p-2.jpg" alt="" class="img-responsive">
-										<div class="captn1">
-											<h5>Inventive Product</h5>
-															
-										</div>
-									</a>	
-							</div>
-							<a href="#"><h4>Residential Design</h4></a>
-							<p>abc</p>
-						</div><div class="col-md-4 prdt-left">
-							<div class="btm-right1">
-									<a href="#">
-										<img src="images/p-2.jpg" alt="" class="img-responsive">
-										<div class="captn1">
-											<h5>Inventive Product</h5>
-															
-										</div>
-									</a>	
-							</div>
-							<a href="#"><h4>Residential Design</h4></a>
-							<p>abc</p>
-						</div>
-						<div class="col-md-4 prdt-left">
-							<div class="btm-right1">
-									<a href="#">
+									<a ng-click="showroomServices = true;interiorDesignServices = false" href="#showroom">
 										<img src="images/p-1.jpg" alt="" class="img-responsive">
 										<div class="captn1">
-											<h5>Inventive Product</h5>
-															
+											<h5>Showroom</h5>
+
 										</div>
-									</a>	
+									</a>
 							</div>
-							<a href="#"><h4>Office Design</h4></a>
-							<p>abc</p>
+							<a href="#showroom"><h4>Showroom Design</h4></a>
+							<p>Have a look at our Showroom designs</p>
+						</div>
+						<div class="col-md-6 prdt-left">
+							<div class="btm-right1">
+									<a ng-click="interiorDesignServices = true; showroomServices = false" href="#interiorDesign">
+										<img src="images/p-2.jpg" alt="" class="img-responsive">
+										<div class="captn1">
+											<h5>Interior Design</h5>
+
+										</div>
+									</a>
+							</div>
+							<a href="#interiorDesign"><h4>Interior Design</h4></a>
+							<p>Have a look at our Interior designs</p>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -468,42 +454,95 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 	</div>
+	
+	<div class="product" id="showroom" ng-if="showroomServices" >
+		<div class="container">
+			<div class="product-top">
+
+				<div class="col-md-12 product-right heading">
+				<h3 class="tittle new">Showroom <span>Services</span></h3>
+
+					<div class="prdt">
+
+<div class="col-md-4 prdt-left">
+We provide Living Design services
+						</div>
+<div class="col-md-4 prdt-left">
+We provide Dining Design services
+						</div>
+						<div class="col-md-4 prdt-left">
+						We provide Bedroom Design services
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	
+		<div class="product" id="interiorDesign" ng-if="interiorDesignServices" >
+		<div class="container">
+			<div class="product-top">
+
+				<div class="col-md-12 product-right heading">
+				<h3 class="tittle new">Interior Design <span>Services</span></h3>
+
+					<div class="prdt">
+
+<div class="col-md-4 prdt-left">
+We provide Toilet Design services
+						</div>
+<div class="col-md-4 prdt-left">
+We provide Kitchen Design services
+						</div>
+						<div class="col-md-4 prdt-left">
+						We provide Commercial Design services
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	
 	<!--client
 	<div class="client" id="client">
 		<div class="container">
-		  
+
 				<div class="customer-say">
 				  <h3 class="tittle two">Customer <span>Says</span></h3>
 				   <div class="col-md-6 customer-grid">
 						<div class="de_testi">
 								<div class="quotes"><img src="images/t1.jpg" alt=""></div>
-                                    
+
 									 <div class="de_testi_by">
 										<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
                                          <a href="#">Michael </a>, Customer
                                     </div>
 									<div class="clearfix"></div>
-                                   
+
                             </div>
-				   
+
 			       </div>
 				   <div class="col-md-6 customer-grid">
-				   
+
 				   <div class="de_testi">
 								<div class="quotes"><img src="images/t2.jpg" alt=""></div>
-                                    
+
 									 <div class="de_testi_by">
 										<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
                                          <a href="#">John </a>, Customer
                                     </div>
 									<div class="clearfix"></div>
-                                   
+
                             </div>
-				   
+
 			       </div>
 			    </div>
 		</div>
-	</div>	
+	</div>
 	<!--//client-->
 <div class="projects">
    <div class="container">
@@ -516,25 +555,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									  <div class="blog-img">
 										 <img src="images/pro1.jpg" class="img-responsive" alt="" />
 									  </div>
-								
+
 									</li>
 									<li>
 									  <div class="blog-img">
 										<img src="images/pro2.jpg" class="img-responsive" alt="" />
 									  </div>
-								
+
 								  </li>
 								  <li>
 									  <div class="blog-img">
 										<img src="images/pro3.jpg" class="img-responsive" alt="" />
 									  </div>
-									   
+
 								  </li>
 								  <li>
 									  <div class="blog-img">
 										<img src="images/pro4.jpg" class="img-responsive" alt="" />
 									  </div>
-							
+
 								  </li>
 								</ul>
 						  </div>
@@ -542,42 +581,39 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="col-md-5 ban-text">
 					   <div class="choose">
 							<div class="choose_img">
-								 <h3>Why choose us ?</h3>
+								 <h3>You'll love our work!</h3>
 								   <!-- choose icon -->
 								   <div class="choose_icon">
 										<div class="choose_left">
 											<span class="glyphicon glyphicon-home"></span>
 										</div>
 											<div class="choose_right">
-												<p>Lorem Ipsum is simply dummy text of the printing and
-												typesetting industry. Lorem Ipsum </p>
+												<p>Homely designs</p>
 											</div>
 										<div class="clearfix"></div>
 									 </div>
-								 
+
 								  <!-- choose icon -->
 								  <div class="choose_icon">
 									<div class="choose_left">
 										<span class="glyphicon glyphicon-pencil"></span>
 									</div>
 									<div class="choose_right">
-										<p>Lorem Ipsum is simply dummy text of the printing and
-										typesetting industry. Lorem Ipsum </p>
+										<p>Customized solutions</p>
 									</div>
 									<div class="clearfix"></div>
 								 </div>
-								 
+
 								  <!-- choose icon -->
 								  <div class="choose_icon">
 									<div class="choose_left">
 										<span class="glyphicon glyphicon-heart-empty"></span>
 									</div>
 									<div class="choose_right">
-										<p>Lorem Ipsum is simply dummy text of the printing and
-										typesetting industry. Lorem Ipsum </p>
+										<p>Designed with love</p>
 									</div>
 									<div class="clearfix"></div>
-								 </div> 
+								 </div>
 							</div>
 						</div>
 					</div>
@@ -602,7 +638,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								  $('.events').append("<li>after event fired.</li>");
 								}
 							  });
-						
+
 							});
 						  </script>
 		 </div>
@@ -611,7 +647,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="time-bg">
 			   <h4>WE PROVIDE <span>BEST </span> INTERIOR DESIGN</h4>
 			<p id="demo">11:20:09 AM</p>
-			
+
 				<script>
 				var myVar=setInterval(function(){myTimer()},1000);
 
@@ -623,21 +659,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		   </div>
 		  	<!--//timer-->
 <!--footer-->
-<div class="footer">
+<div class="footer" id="contact">
 		<div class="container">
 			<div class="row footer-top">
 				<div class="col-md-4 amet-sed">
 				<h4>SAZ Interiors</h4>
 				<ul class="social">
 					<li><i class="glyphicon glyphicon-home"> </i>JP Road, 7 Bunglows, Model Town, Andheri - west, Mumbai - 53</li>
-					<li class="tele-phone"><i class="glyphicon glyphicon-earphone"> </i>097682 40771, 80822 98354</li>
+					<li class="tele-phone"><i class="glyphicon glyphicon-earphone"></i><a href="tel:+919768240771">097682 40771,</a><a href="+918082298354">80822 98354 </a></li>
 					<li class="mail"><a href="mailto:khanahmed2522@gmail.com"><i class="glyphicon glyphicon-envelope"> </i>khanahmed2522@gmail.com</a></li>
 				</ul>
 <h4>Follow Us</h4>
 						<ul class="social-icons2 wow slideInDown" data-wow-duration="1s" data-wow-delay=".3s">
-										<li><a href="#" class="tw"></a></li>
-										<li><a href="#" class="fb"> </a></li>
-										<li><a href="#" class="in"></a></li>
+										<li><a href="http://twitter.com/SAZInteriors" class="tw"></a></li>
+										<li><a href="http://facebook.com/SAZInteriors" class="fb"> </a></li>
+										<li><a href="http://plus.google.com/+SAZInteriors" class="in"></a></li>
 										 <div class="clearfix"></div>
 									</ul>
 									<!--<div class="support">
@@ -646,7 +682,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 										<input type="submit" value="SUBMIT" class="botton">
-									
+
 
 							</form></div>-->
 				</div>
@@ -654,13 +690,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 				   <!--map-->
 				    <div class="map wow fadeInDown" data-wow-duration=".8s" data-wow-delay=".5s">
-					  <h2 class="tittle">Find <span>Us</span></h2>
+					  <h2 class="tittle"><span>Find Us</span></h2>
 					  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1675115.8258740564!2d-98.4671417929578!3d34.91371150021706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sin!4v1434956093308"></iframe>
 					</div>
 				<!--//map-->
 <div class="clearfix"> </div>
 				</div>
-				
+
 			</div>
 <p class="footer-class">
   © <span id="currYear">2017</span> SAZ Interiors. All Rights Reserved | Site design: <a href="https://w3layouts.com/inventive-design-interior-category-flat-bootstrap-responsive-web-template/" >W3layouts</a> | Logo design: <a href="https://dribbble.com/wharf" >Wharf</a>
@@ -675,15 +711,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								  			containerID: 'toTop', // fading element id
 											containerHoverID: 'toTopHover', // fading element hover id
 											scrollSpeed: 1200,
-											easingType: 'linear' 
+											easingType: 'linear'
 								 		};
 										*/
-										
+
 										$().UItoTop({ easingType: 'easeOutQuart' });
-										
+
 									});
 								</script>
 								<!--end-smooth-scrolling-->
+		<a href="#house" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
+<!--mooth-scrolling-->
 		<a href="#house" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	<script src="js/bootstrap.js"></script>
 </body>
