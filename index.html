@@ -5,7 +5,7 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE HTML>
-<html ng-app="">
+<html ng-app="SAZInteriorsApp" ng-controller="SAZInteriorsCtrl">
 
   <head>
     <title>SAZ Interiors - we design your home</title>
@@ -56,9 +56,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<p class="phonenum"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 097682 40771 </p> -->
           <div class="social-icons">
             <ul>
-              <li><a href="http://www.facebook.com/sharer.php?u=http://sazinteriors.in"><i class="facebook"> </i></a></li>
-              <li><a href="http://twitter.com/share?text=SAZ+Interiors+Provide+Best+Interior+Designs&url=http://sazinteriors.in"><i class="twitter"> </i></a></li>
-              <li><a href="https://plus.google.com/share?url=http://sazinteriors.in"><i class="google-plus"> </i></a></li>
+              <li><a ng-href="http://www.facebook.com/sharer.php?u={{currUrl}}"><i class="facebook"> </i></a></li>
+              <li><a ng-href="http://twitter.com/share?text=SAZ+Interiors+Provide+Best+Interior+Designs&url={{currUrl}}"><i class="twitter"> </i></a></li>
+              <li><a ng-href="https://plus.google.com/share?url={{currUrl}}"><i class="google-plus"> </i></a></li>
             </ul>
           </div>
           <div class="clearfix"></div>
