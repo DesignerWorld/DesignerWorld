@@ -1169,7 +1169,7 @@ a.hi-icon img {
 	margin: 10px 0;
 	height: auto;
 	text-align: center;
-	cursor: pointer;
+	/*cursor: pointer;*/
 }
 
 .grid figure img {
