@@ -14,14 +14,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <meta name="keywords" content="Interior Design, Furniture Manufacture, Living room Design, Dining room Design, Bedroom Design, Toilet Design" />
     <script type="applisalonion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-	<link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/lightbox.css">
     <!-- Custom Theme files -->
     <link href="css/iconeffects.css" rel='stylesheet' type='text/css' />
     <link href="css/style.css" rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="css/leoslider.css">
     <link href="css/iconeffects.css" rel='stylesheet' type='text/css' />
     <script src="js/jquery-1.11.1.min.js"></script>
-	<!--script src="js/lightbox-plus-jquery.min.js"> </script-->
+    <!--script src="js/lightbox-plus-jquery.min.js"> </script-->
     <script type="text/javascript" src="js/move-top.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
     <script type="text/javascript" src="js/angularjs/1.4.8/angular.min.js"></script>
@@ -247,11 +247,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
         <div class="col-md-7 feature-grid">
           <h3 class="tittle three">Why <span>Us?</span></h3>
-          <div class="feature">
+          <div class="feature" id="Design">
             <div class="features-item sans-shadow text-center">
               <div class="features-icon">
                 <div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
-                  <a href="#" class="hi-icon"><img src="images/s1.png" alt=" "></a>
+                  <a href="#Design" class="hi-icon"><img src="images/s1.png" alt=" "></a>
                 </div>
               </div>
               <div class="features-info">
@@ -260,11 +260,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               </div>
             </div>
           </div>
-          <div class="feature">
+          <div class="feature" id="Pricing">
             <div class="features-item sans-shadow text-center">
               <div class="features-icon">
                 <div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
-                  <a href="#" class="hi-icon"><img src="images/s2.png" alt=" "></a>
+                  <a href="#Pricing" class="hi-icon"><img src="images/s2.png" alt=" "></a>
                 </div>
               </div>
               <div class="features-info">
@@ -273,11 +273,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               </div>
             </div>
           </div>
-          <div class="feature">
+          <div class="feature" id="Quality">
             <div class="features-item sans-shadow text-center">
               <div class="features-icon">
                 <div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
-                  <a href="#" class="hi-icon"><img src="images/s3.png" alt=" "></a>
+                  <a href="#Quality" class="hi-icon"><img src="images/s3.png" alt=" "></a>
                 </div>
               </div>
               <div class="features-info">
@@ -286,11 +286,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               </div>
             </div>
           </div>
-          <div class="feature">
+          <div class="feature" id="Warranty">
             <div class="features-item sans-shadow text-center">
               <div class="features-icon">
                 <div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
-                  <a href="#" class="hi-icon"><img src="images/s4.png" alt=" "></a>
+                  <a href="#Warranty" class="hi-icon"><img src="images/s4.png" alt=" "></a>
                 </div>
               </div>
               <div class="features-info">
@@ -455,12 +455,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <img src="images/p-1.jpg" alt="" class="img-responsive">
                     <div class="captn1">
                       <h5>Showroom</h5>
-
                     </div>
-                  </a>
                 </div>
-                <a href="#showroom"><h4>Showroom Design</h4></a>
+                <h4>Showroom Design</h4>
                 <p>Have a look at our Showroom designs</p>
+                </a>
               </div>
               <div class="col-md-6 prdt-left">
                 <div class="btm-right1">
@@ -470,10 +469,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                       <h5>Interior Design</h5>
 
                     </div>
-                  </a>
                 </div>
-                <a href="#interiorDesign"><h4>Interior Design</h4></a>
+                <h4>Interior Design</h4>
                 <p>Have a look at our Interior designs</p>
+                </a>
               </div>
               <div class="clearfix"></div>
             </div>
@@ -483,263 +482,611 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       </div>
     </div>
 
-	<!-- gallery -->
-	<div class="gallery" id="showroom" ng-if="showroomServices">
-	<div class="container">
-		 <h2 class="tittle">Showroom <span>Gallery</span></h2>
-						<div class="gallery-grids">
-					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-						<div class="grid">
-							<figure class="effect-apollo">
-								<div class="example-image-link" data-lightbox="example-set" data-title="">
-									<img src="images/c1.jpg" alt="" />
-									<figcaption>
-										<h3>kitchen</h3>
-										<p>Proin vitae luctus dui.</p>
-									</figcaption>	
-								</div>
-							</figure>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-						<div class="grid">
-							<figure class="effect-apollo">
-								<div class="example-image-link" data-lightbox="example-set" data-title="">
-									<img src="images/c2.jpg" alt="" />
-									<figcaption>
-										<h3>Hall</h3>
-										<p>Proin vitae luctus dui.</p>
-									</figcaption>	
-								</div>
-							</figure>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-						<div class="grid">
-							<figure class="effect-apollo">
-								<div class="example-image-link" data-lightbox="example-set" data-title="">
-									<img src="images/c3.jpg" alt="" />
-									<figcaption>
-										<h3>kitchen</h3>
-										<p>Proin vitae luctus dui.</p>
-									</figcaption>		
-								</div>
-							</figure>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-						<div class="grid">
-							<figure class="effect-apollo">
-								<div class="example-image-link" data-lightbox="example-set" data-title="">
-									<img src="images/c4.jpg" alt="" />
-									<figcaption>
-										<h3>Bed Room</h3>
-										<p>Proin vitae luctus dui.</p>
-									</figcaption>	
-								</div>
-							</figure>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-						<div class="grid">
-							<figure class="effect-apollo">
-								<div class="example-image-link" data-lightbox="example-set" data-title="">
-									<img src="images/c6.jpg" alt="" />
-									<figcaption>
-										<h3>Office Room</h3>
-										<p>Proin vitae luctus dui.</p>
-									</figcaption>	
-								</div>
-							</figure>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-						<div class="grid">
-							<figure class="effect-apollo">
-								<div class="example-image-link" data-lightbox="example-set" data-title="">
-									<img src="images/c7.jpg" alt="" />
-									<figcaption>
-										<h3>Hall</h3>
-										<p>Proin vitae luctus dui.</p>
-									</figcaption>		
-								</div>
-							</figure>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-						<div class="grid">
-							<figure class="effect-apollo">
-								<div class="example-image-link" data-lightbox="example-set" data-title="">
-									<img src="images/c11.jpg" alt="" />
-									<figcaption>
-										<h3>Hall</h3>
-										<p>Proin vitae luctus dui.</p>
-									</figcaption>	
-								</div>
-							</figure>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-						<div class="grid">
-							<figure class="effect-apollo">
-								<div class="example-image-link" data-lightbox="example-set" data-title="">
-									<img src="images/c9.jpg" alt="" />
-									<figcaption>
-										<h3>kitchen</h3>
-										<p>Proin vitae luctus dui.</p>
-									</figcaption>	
-								</div>
-							</figure>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-						<div class="grid">
-							<figure class="effect-apollo">
-								<div class="example-image-link" data-lightbox="example-set" data-title="">
-									<img src="images/c10.jpg" alt="" />
-									<figcaption>
-										<h3>Bed Room</h3>
-										<p>Proin vitae luctus dui.</p>
-									</figcaption>		
-								</div>
-							</figure>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
+    <!-- showroomGallery -->
+    <div class="gallery" id="showroom" ng-if="showroomServices">
+      <div class="container">
+        <h2 class="tittle">Showroom <span>Gallery</span></h2>
+        <div class="gallery-grids">
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <a href="#ExtendLivingShowroom" ng-click="ExtendLivingShowroom=true">
+                <figure class="effect-apollo">
+                  <div class="example-image-link" data-lightbox="example-set" data-title="">
+                    <img src="images/showroom/c10.jpg" alt="" />
+                    <figcaption>
+                      <h3>Living</h3>
+                    </figcaption>
+                  </div>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <a href="#ExtendDiningShowroom" ng-click="ExtendDiningShowroom=true">
+                <figure class="effect-apollo">
+                  <div class="example-image-link" data-lightbox="example-set" data-title="">
+                    <img src="images/showroom/c10.jpg" alt="" />
+                    <figcaption>
+                      <h3>Dining</h3>
+                    </figcaption>
+                  </div>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <a href="#ExtendBedRoomShowroom" ng-click="ExtendBedRoomShowroom=true">
+                <figure class="effect-apollo">
+                  <div class="example-image-link" data-lightbox="example-set" data-title="">
+                    <img src="images/showroom/c10.jpg" alt="" />
+                    <figcaption>
+                      <h3>Bed Room</h3>
+                    </figcaption>
+                  </div>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
 
-					</div>
-				</div>			
-<!-- //gallery -->
+      </div>
+    </div>
+    <!-- //showroomGallery -->
 
-	<!-- gallery -->
-	<div class="gallery" id="interiorDesign" ng-if="interiorDesignServices">
-	<div class="container">
-		 <h2 class="tittle">Interior Design <span>Gallery</span></h2>
-						<div class="gallery-grids">
-					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-						<div class="grid">
-							<figure class="effect-apollo">
-								<div class="example-image-link" data-lightbox="example-set" data-title="">
-									<img src="images/c1.jpg" alt="" />
-									<figcaption>
-										<h3>kitchen</h3>
-										<p>Proin vitae luctus dui.</p>
-									</figcaption>	
-								</div>
-							</figure>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-						<div class="grid">
-							<figure class="effect-apollo">
-								<div class="example-image-link" data-lightbox="example-set" data-title="">
-									<img src="images/c2.jpg" alt="" />
-									<figcaption>
-										<h3>Hall</h3>
-										<p>Proin vitae luctus dui.</p>
-									</figcaption>	
-								</div>
-							</figure>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-						<div class="grid">
-							<figure class="effect-apollo">
-								<div class="example-image-link" data-lightbox="example-set" data-title="">
-									<img src="images/c3.jpg" alt="" />
-									<figcaption>
-										<h3>kitchen</h3>
-										<p>Proin vitae luctus dui.</p>
-									</figcaption>		
-								</div>
-							</figure>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-						<div class="grid">
-							<figure class="effect-apollo">
-								<div class="example-image-link" data-lightbox="example-set" data-title="">
-									<img src="images/c4.jpg" alt="" />
-									<figcaption>
-										<h3>Bed Room</h3>
-										<p>Proin vitae luctus dui.</p>
-									</figcaption>	
-								</div>
-							</figure>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-						<div class="grid">
-							<figure class="effect-apollo">
-								<div class="example-image-link" data-lightbox="example-set" data-title="">
-									<img src="images/c6.jpg" alt="" />
-									<figcaption>
-										<h3>Office Room</h3>
-										<p>Proin vitae luctus dui.</p>
-									</figcaption>	
-								</div>
-							</figure>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-						<div class="grid">
-							<figure class="effect-apollo">
-								<div class="example-image-link" data-lightbox="example-set" data-title="">
-									<img src="images/c7.jpg" alt="" />
-									<figcaption>
-										<h3>Hall</h3>
-										<p>Proin vitae luctus dui.</p>
-									</figcaption>		
-								</div>
-							</figure>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-						<div class="grid">
-							<figure class="effect-apollo">
-								<div class="example-image-link" data-lightbox="example-set" data-title="">
-									<img src="images/c11.jpg" alt="" />
-									<figcaption>
-										<h3>Hall</h3>
-										<p>Proin vitae luctus dui.</p>
-									</figcaption>	
-								</div>
-							</figure>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-						<div class="grid">
-							<figure class="effect-apollo">
-								<div class="example-image-link" data-lightbox="example-set" data-title="">
-									<img src="images/c9.jpg" alt="" />
-									<figcaption>
-										<h3>kitchen</h3>
-										<p>Proin vitae luctus dui.</p>
-									</figcaption>	
-								</div>
-							</figure>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-						<div class="grid">
-							<figure class="effect-apollo">
-								<div class="example-image-link" data-lightbox="example-set" data-title="">
-									<img src="images/c10.jpg" alt="" />
-									<figcaption>
-										<h3>Bed Room</h3>
-										<p>Proin vitae luctus dui.</p>
-									</figcaption>		
-								</div>
-							</figure>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
+    <!-- ExtendLivingShowroom -->
+    <div class="gallery" id="ExtendLivingShowroom" ng-if="showroomServices">
+      <div class="container">
+        <h2 class="tittle">Living <span>Gallery</span></h2>
+        <div class="gallery-grids">
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendLivingShowroom/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Living</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendLivingShowroom/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Dining</h3>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendLivingShowroom/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Bed Room</h3>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
 
-					</div>
-				</div>			
-<!-- //gallery -->
+      </div>
+    </div>
+    <!-- //ExtendLivingShowroom -->
+
+    <!-- ExtendDiningShowroom -->
+    <div class="gallery" id="ExtendDiningShowroom" ng-if="showroomServices">
+      <div class="container">
+        <h2 class="tittle">Dining <span>Gallery</span></h2>
+        <div class="gallery-grids">
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendDiningShowroom/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Dining</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendDiningShowroom/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Dining</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendDiningShowroom/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Dining</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- //ExtendDiningShowroom -->
+
+    <!-- ExtendBedRoomShowroom -->
+    <div class="gallery" id="ExtendBedRoomShowroom" ng-if="showroomServices">
+      <div class="container">
+        <h2 class="tittle">Bedroom <span>Gallery</span></h2>
+        <div class="gallery-grids">
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendBedRoomShowroom/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Bedroom</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendBedRoomShowroom/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Bedroom</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendBedRoomShowroom/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Bedroom</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- //ExtendBedRoomShowroom -->
+
+    <!-- interiorDesigngallery -->
+    <div class="gallery" id="interiorDesign" ng-if="interiorDesignServices">
+      <div class="container">
+        <h2 class="tittle">Interior Design <span>Gallery</span></h2>
+        <div class="gallery-grids">
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <a href="#ExtendLivingInteriorDesign" ng-click="ExtendLivingInteriorDesign=true">
+                <figure class="effect-apollo">
+                  <div class="example-image-link" data-lightbox="example-set" data-title="">
+                    <img src="images/ExtendLivingInteriorDesign/c1.jpg" alt="" />
+                    <figcaption>
+                      <h3>Living</h3>
+                    </figcaption>
+                  </div>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <a href="#ExtendBedroomInteriorDesign" ng-click="ExtendBedroomInteriorDesign=true">
+                <figure class="effect-apollo">
+                  <div class="example-image-link" data-lightbox="example-set" data-title="">
+                    <img src="images/ExtendBedroomInteriorDesign/c1.jpg" alt="" />
+                    <figcaption>
+                      <h3>Bed room</h3>
+                    </figcaption>
+                  </div>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <a href="#ExtendKitchenInteriorDesign" ng-click="ExtendKitchenInteriorDesign=true">
+                <figure class="effect-apollo">
+                  <div class="example-image-link" data-lightbox="example-set" data-title="">
+                    <img src="images/ExtendKitchenInteriorDesign/c1.jpg" alt="" />
+                    <figcaption>
+                      <h3>Kitchen</h3>
+                    </figcaption>
+                  </div>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <a href="#ExtendToiletInteriorDesign" ng-click="ExtendToiletInteriorDesign=true">
+                <figure class="effect-apollo">
+                  <div class="example-image-link" data-lightbox="example-set" data-title="">
+                    <img src="images/ExtendToiletInteriorDesign/c1.jpg" alt="" />
+                    <figcaption>
+                      <h3>Toilet</h3>
+                    </figcaption>
+                  </div>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <a href="#ExtendProductDesignInteriorDesign" ng-click="ExtendProductDesignInteriorDesign=true">
+                <figure class="effect-apollo">
+                  <div class="example-image-link" data-lightbox="example-set" data-title="">
+                    <img src="images/ExtendProductDesignInteriorDesign/c1.jpg" alt="" />
+                    <figcaption>
+                      <h3>Product Design</h3>
+                    </figcaption>
+                  </div>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <a href="#ExtendCommercialInteriorDesign" ng-click="ExtendCommercialInteriorDesign=true">
+                <figure class="effect-apollo">
+                  <div class="example-image-link" data-lightbox="example-set" data-title="">
+                    <img src="images/ExtendCommercialInteriorDesign/c1.jpg" alt="" />
+                    <figcaption>
+                      <h3>Commercial / Retail</h3>
+                    </figcaption>
+                  </div>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+      </div>
+    </div>
+    <!-- //interiorDesigngallery -->
+
+    <!-- ExtendLivingInteriorDesign -->
+    <div class="gallery" id="ExtendLivingInteriorDesign" ng-if="interiorDesignServices">
+      <div class="container">
+        <h2 class="tittle">Living <span>Gallery</span></h2>
+        <div class="gallery-grids">
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendLivingInteriorDesign/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Living</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendLivingInteriorDesign/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Living</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendLivingInteriorDesign/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Living</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- //ExtendLivingInteriorDesign -->
+
+    <!-- ExtendBedroomInteriorDesign -->
+    <div class="gallery" id="ExtendBedroomInteriorDesign" ng-if="interiorDesignServices">
+      <div class="container">
+        <h2 class="tittle">Bedroom <span>Gallery</span></h2>
+        <div class="gallery-grids">
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendBedroomInteriorDesign/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Bedroom</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendBedroomInteriorDesign/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Bedroom</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendBedroomInteriorDesign/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Bedroom</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- //ExtendBedroomInteriorDesign -->
+
+    <!-- ExtendKitchenInteriorDesign -->
+    <div class="gallery" id="ExtendKitchenInteriorDesign" ng-if="interiorDesignServices">
+      <div class="container">
+        <h2 class="tittle">Kitchen <span>Gallery</span></h2>
+        <div class="gallery-grids">
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendKitchenInteriorDesign/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Kitchen</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendKitchenInteriorDesign/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Kitchen</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendKitchenInteriorDesign/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Kitchen</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- //ExtendKitchenInteriorDesign -->
+
+    <!-- ExtendToiletInteriorDesign -->
+    <div class="gallery" id="ExtendToiletInteriorDesign" ng-if="interiorDesignServices">
+      <div class="container">
+        <h2 class="tittle">Toilet <span>Gallery</span></h2>
+        <div class="gallery-grids">
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendToiletInteriorDesign/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Toilet</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendToiletInteriorDesign/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Toilet</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendToiletInteriorDesign/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Toilet</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- //ExtendToiletInteriorDesign -->
+
+    <!-- ExtendProductDesignInteriorDesign -->
+    <div class="gallery" id="ExtendProductDesignInteriorDesign" ng-if="interiorDesignServices">
+      <div class="container">
+        <h2 class="tittle">Product Design <span>Gallery</span></h2>
+        <div class="gallery-grids">
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendProductDesignInteriorDesign/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Product Design</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendProductDesignInteriorDesign/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Product Design</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendProductDesignInteriorDesign/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Product Design</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- //ExtendProductDesignInteriorDesign -->
+
+    <!-- ExtendCommercialInteriorDesign -->
+    <div class="gallery" id="ExtendCommercialInteriorDesign" ng-if="interiorDesignServices">
+      <div class="container">
+        <h2 class="tittle">Commercial <span>Gallery</span></h2>
+        <div class="gallery-grids">
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendCommercialInteriorDesign/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Commercial</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendCommercialInteriorDesign/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Commercial</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendCommercialInteriorDesign/c10.jpg" alt="" />
+                  <figcaption>
+                    <h3>Commercial</h3>
+                    <p>Client: abc</p>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- //ExtendCommercialInteriorDesign -->
 
     <div class="projects">
       <div class="container">
