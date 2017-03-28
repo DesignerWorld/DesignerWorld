@@ -1240,6 +1240,7 @@ a.hi-icon img {
 
 figure.effect-apollo img {
 	opacity: 0.95;
+	height: 15em;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: scale3d(1.05,1.05,1);
