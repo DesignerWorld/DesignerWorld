@@ -96,7 +96,7 @@ html[xmlns] .leoslider .slides {
    color: rgb(0, 0, 0);
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-	background: url('../images/arrows.png') no-repeat -34px 0px;
+	background: url('../images/Misc/arrows.png') no-repeat -34px 0px;
 }
 .leo-direction-nav a:before {
     font-size: 40px;
@@ -105,10 +105,10 @@ html[xmlns] .leoslider .slides {
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3)
 }
 .leo-direction-nav a.leo-next:before {
-    background: url('../images/arrows.png') no-repeat 0px 0px;
+    background: url('../images/Misc/arrows.png') no-repeat 0px 0px;
 }
 .leo-direction-nav .leo-prev {
-   background: url('../images/arrows.png') no-repeat 0px 0px;
+   background: url('../images/Misc/arrows.png') no-repeat 0px 0px;
 }
 .leo-direction-nav .leo-next {
     right: -50px;

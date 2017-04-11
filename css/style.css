@@ -116,7 +116,7 @@ span.glyphicon.glyphicon-earphone,span.glyphicon.glyphicon-map-marker {
 .social-icons i {
   width: 18px;
   height: 18px;
-  background: url('../images/img-sprite.png') no-repeat 0px 0px;
+  background: url('../images/Social/img-sprite.png') no-repeat 0px 0px;
   display: inline-block;
   margin-right:3px;
 }
@@ -1313,7 +1313,7 @@ figure.effect-apollo:hover p {
 /*-- //gallery --*/
 /*--timer--*/
 .time-bg {
-    background: url(../images/office.jpg)no-repeat 0px 0px;
+    background: url(../images/Misc/office.jpg)no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -1405,7 +1405,7 @@ p#demo {
     text-decoration: none;
     width: 42px;
     height: 52px;
-    background: transparent url("../images/arrows.png") no-repeat left top;
+    background: transparent url("../images/Misc/arrows.png") no-repeat left top;
     margin-top:2%;
 }
  .callbacks_nav:hover{
@@ -1805,13 +1805,13 @@ ul.social-icons2  li a.tw,ul.social-icons2  li a.fb,ul.social-icons2  li a.in {
 	width:79px;
 	height:89px;
 	display: block;
-	background: url(../images/tw.png)no-repeat 0px 0px;
+	background: url(../images/Social/tw.png)no-repeat 0px 0px;
 }
 ul.social-icons2 li a.fb {
-	background: url(../images/fb.png)no-repeat 0px 0px;
+	background: url(../images/Social/fb.png)no-repeat 0px 0px;
 }
 ul.social-icons2  li a.in {
-	background: url(../images/gg.png)no-repeat 0px 0px;
+	background: url(../images/Social/gg.png)no-repeat 0px 0px;
 }
 
 ul.social-icons2  li a:hover{
@@ -1884,7 +1884,7 @@ ul.social li a{
   height: 22px;
   border: none;
   text-indent: 100%;
-  background: url(../images/move-top.png) no-repeat 0px 0px;
+  background: url(../images/Misc/move-top.png) no-repeat 0px 0px;
 }
 /*-- responsive-design starts-here --*/
 @media (max-width: 1440px) {
