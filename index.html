@@ -150,11 +150,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <img src="images/SliderSmall/p1.jpg" class="img-responsive" alt="" />
               <h5>Hall</h5>
             </div>
-          </div-->
+          </div>
+-->
+          <div class="item-owl">
+            <div class="test-review">
+              <img src="images/SliderSmall/p1.jpg" class="img-responsive" alt="" />
+              <h5>Living room</h5>
+            </div>
+          </div>
           <div class="item-owl">
             <div class="test-review">
               <img src="images/SliderSmall/p2.jpg" class="img-responsive" alt="" />
-              <h5>Outdoor</h5>
+              <h5>Dining</h5>
             </div>
           </div>
           <div class="item-owl">
@@ -166,19 +173,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="item-owl">
             <div class="test-review">
               <img src="images/SliderSmall/p4.jpg" class="img-responsive" alt="" />
-              <h5>Dining</h5>
+              <h5>Kitchen</h5>
             </div>
           </div>
           <div class="item-owl">
             <div class="test-review">
               <img src="images/SliderSmall/p5.jpg" class="img-responsive" alt="" />
-              <h5>Living room</h5>
-            </div>
-          </div>
-          <div class="item-owl">
-            <div class="test-review">
-              <img src="images/SliderSmall/p6.jpg" class="img-responsive" alt="" />
-              <h5>Kitchen</h5>
+              <h5>Toilet</h5>
             </div>
           </div>
           </div>
@@ -451,7 +452,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- //services -->
 
     <!-- showroomGallery -->
-    <div class="gallery" id="showroom" ng-if="showroomServices">
+    <div class="gallery" id="showroom" ng-show="showroomServices">
       <div class="container">
         <h2 class="tittle">Showroom <span>Gallery</span></h2>
         <div class="gallery-grids">
@@ -505,7 +506,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- //showroomGallery -->
 
     <!-- ExtendLivingShowroom -->
-    <div class="gallery" id="ExtendLivingShowroom" ng-if="showroomServices">
+    <div class="gallery" id="ExtendLivingShowroom" ng-show="showroomServices">
       <div class="container">
         <h4>Living room <span>Gallery</span></h4>
         <div class="gallery-grids">
@@ -553,7 +554,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- //ExtendLivingShowroom -->
 
     <!-- ExtendDiningShowroom -->
-    <div class="gallery" id="ExtendDiningShowroom" ng-if="showroomServices">
+    <div class="gallery" id="ExtendDiningShowroom" ng-show="showroomServices">
       <div class="container">
         <h4>Dining room <span>Gallery</span></h4>
         <div class="gallery-grids">
@@ -601,7 +602,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- //ExtendDiningShowroom -->
 
     <!-- ExtendBedRoomShowroom -->
-    <div class="gallery" id="ExtendBedRoomShowroom" ng-if="showroomServices">
+    <div class="gallery" id="ExtendBedRoomShowroom" ng-show="showroomServices">
       <div class="container">
         <h4>Bedroom <span>Gallery</span></h4>
         <div class="gallery-grids">
@@ -649,7 +650,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- //ExtendBedRoomShowroom -->
 
     <!-- ExtendArtifactShowroom -->
-    <div class="gallery" id="ExtendArtifactShowroom" ng-if="showroomServices">
+    <div class="gallery" id="ExtendArtifactShowroom" ng-show="showroomServices">
       <div class="container">
         <h4>Artifact <span>Gallery</span></h4>
         <div class="gallery-grids">
@@ -697,7 +698,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- //ExtendArtifactShowroom -->
 
     <!-- interiorDesigngallery -->
-    <div class="gallery" id="interiorDesign" ng-if="interiorDesignServices">
+    <div class="gallery" id="interiorDesign" ng-show="interiorDesignServices">
       <div class="container">
         <h2 class="tittle">Interior Design <span>Gallery</span></h2>
         <div class="gallery-grids">
@@ -792,7 +793,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- //interiorDesigngallery -->
 
     <!-- ExtendLivingInteriorDesign -->
-    <div class="gallery" id="ExtendLivingInteriorDesign" ng-if="interiorDesignServices">
+    <div class="gallery" id="ExtendLivingInteriorDesign" ng-show="interiorDesignServices">
       <div class="container">
         <h4>Living & Dining room <span>Gallery</span></h4>
         <div class="gallery-grids">
@@ -912,7 +913,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- //ExtendLivingInteriorDesign -->
 
     <!-- ExtendBedroomInteriorDesign -->
-    <div class="gallery" id="ExtendBedroomInteriorDesign" ng-if="interiorDesignServices">
+    <div class="gallery" id="ExtendBedroomInteriorDesign" ng-show="interiorDesignServices">
       <div class="container">
         <h4>Bedroom <span>Gallery</span></h4>
         <div class="gallery-grids">
@@ -960,7 +961,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- //ExtendBedroomInteriorDesign -->
 
     <!-- ExtendKitchenInteriorDesign -->
-    <div class="gallery" id="ExtendKitchenInteriorDesign" ng-if="interiorDesignServices">
+    <div class="gallery" id="ExtendKitchenInteriorDesign" ng-show="interiorDesignServices">
       <div class="container">
         <h4>Kitchen <span>Gallery</span></h4>
         <div class="gallery-grids">
@@ -1008,7 +1009,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- //ExtendKitchenInteriorDesign -->
 
     <!-- ExtendToiletInteriorDesign -->
-    <div class="gallery" id="ExtendToiletInteriorDesign" ng-if="interiorDesignServices">
+    <div class="gallery" id="ExtendToiletInteriorDesign" ng-show="interiorDesignServices">
       <div class="container">
         <h4>Toilet <span>Gallery</span></h4>
         <div class="gallery-grids">
@@ -1056,7 +1057,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- //ExtendToiletInteriorDesign -->
 
     <!-- ExtendProductDesignInteriorDesign -->
-    <div class="gallery" id="ExtendProductDesignInteriorDesign" ng-if="interiorDesignServices">
+    <div class="gallery" id="ExtendProductDesignInteriorDesign" ng-show="interiorDesignServices">
       <div class="container">
         <h4>Product Design <span>Gallery</span></h4>
         <div class="gallery-grids">
@@ -1140,7 +1141,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- //ExtendProductDesignInteriorDesign -->
 
     <!-- ExtendCommercialInteriorDesign -->
-    <div class="gallery" id="ExtendCommercialInteriorDesign" ng-if="interiorDesignServices">
+    <div class="gallery" id="ExtendCommercialInteriorDesign" ng-show="interiorDesignServices">
       <div class="container">
         <h4>Commercial <span>Gallery</span></h4>
         <div class="gallery-grids">
