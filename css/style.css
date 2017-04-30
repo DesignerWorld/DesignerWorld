@@ -319,6 +319,8 @@ h2.tittle span {
 	box-shadow:none;
 }
 .test-review img {
+	height: 200px;
+	width: 300px;
     margin: 0 auto;
 }
 .banner-bottom {

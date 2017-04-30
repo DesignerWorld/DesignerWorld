@@ -4,33 +4,56 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
-<!DOCTYPE HTML>
-<html ng-app="SAZInteriorsApp" ng-controller="SAZInteriorsCtrl">
+<!DOCTYPE html>
+<html ng-app="SAZInteriorsApp" ng-controller="SAZInteriorsCtrl" class="ng-scope">
 
 <head>
+  <style type="text/css">
+    @charset "UTF-8";
+    [ng\:cloak],
+    [ng-cloak],
+    [data-ng-cloak],
+    [x-ng-cloak],
+    .ng-cloak,
+    .x-ng-cloak,
+    .ng-hide:not(.ng-hide-animate) {
+      display: none !important;
+    }
+    
+    ng\:form {
+      display: block;
+    }
+    
+    .ng-animate-shim {
+      visibility: hidden;
+    }
+    
+    .ng-anchor {
+      position: absolute;
+    }
+  </style>
   <title>SAZ Interiors - we design your home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="keywords" content="Interior Design, Furniture Manufacture, Living room Design, Dining room Design, Bedroom Design, Toilet Design"
-  />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Interior Design, Furniture Manufacture, Living room Design, Dining room Design, Bedroom Design, Toilet Design">
   <script type="applisalonion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1);
     } </script>
-  <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/lightbox.css">
   <!-- Custom Theme files -->
-  <link href="css/iconeffects.css" rel='stylesheet' type='text/css' />
-  <link href="css/style.css" rel='stylesheet' type='text/css' />
+  <link href="css/iconeffects.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/leoslider.css">
-  <link href="css/iconeffects.css" rel='stylesheet' type='text/css' />
+  <link href="css/iconeffects.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-1.11.1.min.js"></script>
   <!--script src="js/lightbox-plus-jquery.min.js"> </script-->
   <script type="text/javascript" src="js/move-top.js"></script>
   <script type="text/javascript" src="js/easing.js"></script>
   <script type="text/javascript" src="js/angularjs/1.4.8/angular.min.js"></script>
   <!--/web-font-->
-  <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-  <link href='//fonts.googleapis.com/css?family=Nosifer' rel='stylesheet' type='text/css'>
+  <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Nosifer" rel="stylesheet" type="text/css">
   <!--/script-->
   <script type="text/javascript">
     jQuery(document).ready(function ($) {
@@ -59,9 +82,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<p class="phonenum"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 097682 40771 </p> -->
         <div class="social-icons">
           <ul>
-            <li><a ng-href="http://www.facebook.com/sharer.php?u={{currUrl}}"><i class="facebook"> </i></a></li>
-            <li><a ng-href="http://twitter.com/share?text=SAZ+Interiors+Provide+Best+Interior+Designs&url={{currUrl}}"><i class="twitter"> </i></a></li>
-            <li><a ng-href="https://plus.google.com/share?url={{currUrl}}"><i class="google-plus"> </i></a></li>
+            <li>
+              <a ng-href="http://www.facebook.com/sharer.php?u=http://localhost:8080/#interiorDesign" href="http://www.facebook.com/sharer.php?u=http://localhost:8080/#interiorDesign"><i class="facebook"> </i></a>
+            </li>
+            <li>
+              <a ng-href="http://twitter.com/share?text=SAZ+Interiors+Provide+Best+Interior+Designs&amp;url=http://localhost:8080/#interiorDesign"
+                href="http://twitter.com/share?text=SAZ+Interiors+Provide+Best+Interior+Designs&amp;url=http://localhost:8080/#interiorDesign"><i class="twitter"> </i></a>
+            </li>
+            <li>
+              <a ng-href="https://plus.google.com/share?url=http://localhost:8080/#interiorDesign" href="https://plus.google.com/share?url=http://localhost:8080/#interiorDesign"><i class="google-plus"> </i></a>
+            </li>
           </ul>
         </div>
         <div class="clearfix"></div>
@@ -111,25 +141,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       </nav>
       <div class="clearfix"></div>
     </div>
-    <section id="line-slider">
-      <div class="leoslider">
-
-
-        <ul class="slides">
-          <li>
-            <img src="images/SliderLarge/p1.jpg" alt=" " />
-          </li>
-          <li>
-            <img src="images/SliderLarge/p2.jpg" alt=" " />
-          </li>
-          <li>
-            <img src="images/SliderLarge/p3.jpg" alt=" " />
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- /Line Slider -->
+<section id="line-slider">
+            <div class="leoslider">
+			
+			
+              <ul class="slides">
+                <li>
+                   <img src="images/SliderLarge/p1.jpg" alt=" ">
+                </li>
+                <li>
+                   <img src="images/SliderLarge/p2.jpg" alt=" ">
+                </li>
+                <li>
+                 <img src="images/SliderLarge/p3.jpg" alt=" ">
+                </li>
+              </ul>
+            </div>
+        </section>
+            <!-- /Line Slider -->
   </div>
+
+
   <div class="banner-bottom">
     <!--//screen-gallery-->
     <div class="sreen-gallery-cursual">
@@ -150,79 +182,46 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       </script>
       <!--//required-js-files-->
       <div id="owl-demo" class="owl-carousel">
-        <!--div class="item-owl">
-            <div class="test-review">
-              <img src="images/SliderSmall/p1.jpg" class="img-responsive" alt="" />
-              <h5>Hall</h5>
-            </div>
-<<<<<<< HEAD
-=======
-          </div>
--->
-          <div class="item-owl">
-            <div class="test-review">
-              <img src="images/SliderSmall/p1.jpg" class="img-responsive" alt="" />
-              <h5>Living room</h5>
-            </div>
-          </div>
-          <div class="item-owl">
-            <div class="test-review">
-              <img src="images/SliderSmall/p2.jpg" class="img-responsive" alt="" />
-              <h5>Dining</h5>
-            </div>
->>>>>>> 28d9b15dbcb7cd0315ce11294a52d4c223b92fd0
-          </div>
--->
         <div class="item-owl">
           <div class="test-review">
-            <img src="images/SliderSmall/p1.jpg" class="img-responsive" alt="" />
-            <h5>Living room</h5>
+            <img src="images/SliderSmall/p1.jpg" class="img-responsive" alt="">
+            <h5>Living</h5>
           </div>
-<<<<<<< HEAD
         </div>
+
         <div class="item-owl">
           <div class="test-review">
-            <img src="images/SliderSmall/p2.jpg" class="img-responsive" alt="" />
+            <img src="images/SliderSmall/p2.jpg" class="img-responsive" alt="">
             <h5>Dining</h5>
           </div>
         </div>
+
         <div class="item-owl">
           <div class="test-review">
-            <img src="images/SliderSmall/p3.jpg" class="img-responsive" alt="" />
+            <img src="images/SliderSmall/p3.jpg" class="img-responsive" alt="">
             <h5>Bedroom</h5>
           </div>
         </div>
+
         <div class="item-owl">
           <div class="test-review">
-            <img src="images/SliderSmall/p4.jpg" class="img-responsive" alt="" />
+            <img src="images/SliderSmall/p4.jpg" class="img-responsive" alt="">
             <h5>Kitchen</h5>
-=======
-          <div class="item-owl">
-            <div class="test-review">
-              <img src="images/SliderSmall/p4.jpg" class="img-responsive" alt="" />
-              <h5>Kitchen</h5>
-            </div>
-          </div>
-          <div class="item-owl">
-            <div class="test-review">
-              <img src="images/SliderSmall/p5.jpg" class="img-responsive" alt="" />
-              <h5>Toilet</h5>
-            </div>
->>>>>>> 28d9b15dbcb7cd0315ce11294a52d4c223b92fd0
           </div>
         </div>
+
         <div class="item-owl">
           <div class="test-review">
-            <img src="images/SliderSmall/p5.jpg" class="img-responsive" alt="" />
+            <img src="images/SliderSmall/p5.jpg" class="img-responsive" alt="">
             <h5>Toilet</h5>
           </div>
         </div>
       </div>
-    </div>
-    <!--//screen-gallery-->
+      <!--//screen-gallery-->
 
+    </div>
   </div>
-  </div>
+
   <!-- about-type-grid -->
   <div class="about" id="about">
     <div class="col-md-5 ab-left">
@@ -324,7 +323,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   <!--/timer-->
   <div class="time-bg">
     <h4>YES, WE PROVIDE <span>BEST </span> INTERIOR DESIGN</h4>
-    <p id="demo">11:20:09 AM</p>
+    <p id="demo">21:34:23</p>
 
     <script>
         var myVar = setInterval(function () {
@@ -338,95 +337,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </script>
   </div>
   <!--//timer-->
-  <!--news
-		<div class="news-section" id="news">
-			<div class="container">
-				 <h3 class="tittle">Recent <span>News</span></h3>
-				<div class="news-left">
-					<div class="col-md-6 col-news-right">
-						<div class="col-news-top">
-							<a href="single.html" class="date-in">
-								<img class="img-responsive mix-in" src="images/c4.jpg" alt="">
-								<div class="month-in">
-								  <label>
-									<span class="day">30</span>
-									<span class="month">March</span>
-									<span class="like">We Build your Dreams</span>
-								  </label>
-								</div>
-							</a>
-							<div class="clearfix"> </div>
-							<div class="col-bottom">
-							<h4>We design your home</h4>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem  </p>
-							<a href="single.html" class="hvr-shutter-in-horizontal">Read More</a>
-						</div>
-						</div>
-						<div class="col-news-top">
-							<a href="single.html" class="date-in">
-								<img class="img-responsive mix-in" src="images/c2.jpg" alt="">
-								<div class="month-in">
-								  <label>
-									<span class="day">25</span>
-									<span class="month">May</span>
-									<span class="like">We Build your Dreams</span>
-								  </label>
-								</div>
-							</a>
-							<div class="clearfix"> </div>
-							<div class="col-bottom">
-							<h4>We Build your home</h4>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem  </p>
-							<a href="single.html" class="hvr-shutter-in-horizontal">Read More</a>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-news">
-						<div class="col-bottom two">
-							<h4>We Build your home </h4>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem  </p>
-							<a href="single.html" class="hvr-shutter-in-horizontal">Read More</a>
-						</div>
-						<div class="col-news-top">
 
-							<a href="single.html" class="date-in">
-								<img class="img-responsive mix-in" src="images/c3.jpg" alt="">
-								<div class="month-in">
-								  <label>
-									<span class="day">30</span>
-									<span class="month">August</span>
-									<span class="like">We Build your Dreams</span>
-								  </label>
-								</div>
-							</a>
-							<div class="clearfix"> </div>
-
-						</div>
-						<div class="col-news-top">
-							<div class="col-bottom">
-							<h4>We design your home</h4>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem  </p>
-							<a href="single.html" class="hvr-shutter-in-horizontal">Read More</a>
-						</div>
-							<a href="single.html" class="date-in">
-								<img class="img-responsive mix-in" src="images/c1.jpg" alt="">
-								<div class="month-in">
-								  <label>
-									<span class="day">10</span>
-									<span class="month">December</span>
-									<span class="like">We Build your Dreams</span>
-								  </label>
-								</div>
-							</a>
-							<div class="clearfix"> </div>
-						</div>
-
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
-		</div>
-	<!--//news-->
 
   <!--start-services-->
   <!--end-team-->
@@ -451,67 +362,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
           <div class="prdt">
 
-<<<<<<< HEAD
             <div class="col-md-6 prdt-left">
               <div class="btm-right1">
                 <a ng-click="showroomServices = true;interiorDesignServices = false" href="#showroom">
                   <img src="images/services/showroom/p1.jpg" alt="" class="img-responsive">
                   <div class="captn1">
                     <h5>Showroom</h5>
-=======
-              <div class="col-md-6 prdt-left">
-                <div class="btm-right1">
-                  <a ng-click="showroomServices = true;interiorDesignServices = false" href="#showroom">
-                    <img src="images/services/showroom/p1.jpg" alt="" class="img-responsive">
-                    <div class="captn1">
-                      <h5>Showroom</h5>
-                    </div>
-                </div>
+                  </div>
+                </a>
+              </div>
+              <a ng-click="showroomServices = true;interiorDesignServices = false" href="#showroom">
                 <h4>Showroom Design</h4>
                 <p>Have a look at our Showroom designs</p>
-                </a>
-              </div>
-              <div class="col-md-6 prdt-left">
-                <div class="btm-right1">
-                  <a ng-click="interiorDesignServices = true; showroomServices = false" href="#interiorDesign">
-                    <img src="images/services/interiorDesign/p1.jpg" alt="" class="img-responsive">
-                    <div class="captn1">
-                      <h5>Interior Design</h5>
-
-                    </div>
-                </div>
-                <h4>Interior Design</h4>
-                <p>Have a look at our Interior designs</p>
-                </a>
-              </div>
-              <div class="clearfix"></div>
-            </div>
-          </div>
-          <div class="clearfix"></div>
-        </div>
-      </div>
-    </div>
-    <!-- //services -->
-
-    <!-- showroomGallery -->
-    <div class="gallery" id="showroom" ng-show="showroomServices">
-      <div class="container">
-        <h2 class="tittle">Showroom <span>Gallery</span></h2>
-        <div class="gallery-grids">
-          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-            <div class="grid">
-              <a href="#ExtendLivingShowroom" ng-click="ExtendLivingShowroom=true">
-                <figure class="effect-apollo">
-                  <div class="example-image-link" data-lightbox="example-set" data-title="">
-                    <img src="images/showroom/living/p1.jpg" alt="" />
-                    <figcaption>
-                      <h3>Living room</h3>
-                    </figcaption>
->>>>>>> 28d9b15dbcb7cd0315ce11294a52d4c223b92fd0
-                  </div>
-              </div>
-              <h4>Showroom Design</h4>
-              <p>Have a look at our Showroom designs</p>
               </a>
             </div>
             <div class="col-md-6 prdt-left">
@@ -522,9 +384,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <h5>Interior Design</h5>
 
                   </div>
+                </a>
               </div>
-              <h4>Interior Design</h4>
-              <p>Have a look at our Interior designs</p>
+              <a ng-click="interiorDesignServices = true; showroomServices = false" href="#interiorDesign">
+                <h4>Interior Design</h4>
+                <p>Have a look at our Interior designs</p>
               </a>
             </div>
             <div class="clearfix"></div>
@@ -533,32 +397,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="clearfix"></div>
       </div>
     </div>
-<<<<<<< HEAD
   </div>
   <!-- //services -->
 
   <!-- showroomGallery -->
-  <div class="gallery" id="showroom" ng-show="showroomServices">
+  <div class="gallery ng-hide" id="showroom" ng-show="showroomServices">
     <div class="container">
       <h2 class="tittle">Showroom <span>Gallery</span></h2>
       <div class="gallery-grids">
         <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
           <div class="grid">
             <a href="#ExtendLivingShowroom" ng-click="ExtendLivingShowroom=true">
-=======
-    <!-- //showroomGallery -->
-
-    <!-- ExtendLivingShowroom -->
-    <div class="gallery" id="ExtendLivingShowroom" ng-show="showroomServices">
-      <div class="container">
-        <h4>Living room <span>Gallery</span></h4>
-        <div class="gallery-grids">
-          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-            <div class="grid">
->>>>>>> 28d9b15dbcb7cd0315ce11294a52d4c223b92fd0
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/showroom/living/p1.jpg" alt="" />
+                  <img src="images/showroom/living/p1.jpg" alt="">
                   <figcaption>
                     <h3>Living room</h3>
                   </figcaption>
@@ -572,7 +424,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <a href="#ExtendDiningShowroom" ng-click="ExtendDiningShowroom=true">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/showroom/dining/p1.jpg" alt="" />
+                  <img src="images/showroom/dining/p1.jpg" alt="">
                   <figcaption>
                     <h3>Dining room</h3>
                   </figcaption>
@@ -586,7 +438,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <a href="#ExtendBedRoomShowroom" ng-click="ExtendBedRoomShowroom=true">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/showroom/bedroom/p1.jpg" alt="" />
+                  <img src="images/showroom/bedroom/p1.jpg" alt="">
                   <figcaption>
                     <h3>Bed Room</h3>
                   </figcaption>
@@ -603,7 +455,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   <!-- //showroomGallery -->
 
   <!-- ExtendLivingShowroom -->
-  <div class="gallery" id="ExtendLivingShowroom" ng-show="showroomServices">
+  <div class="gallery ng-hide" id="ExtendLivingShowroom" ng-show="showroomServices">
     <div class="container">
       <h4>Living room <span>Gallery</span></h4>
       <div class="gallery-grids">
@@ -611,7 +463,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="grid">
             <figure class="effect-apollo">
               <div class="example-image-link" data-lightbox="example-set" data-title="">
-                <img src="images/ExtendLivingShowroom/p1.jpg" alt="" />
+                <img src="images/ExtendLivingShowroom/p1.jpg" alt="">
                 <figcaption>
                   <h3>Living room</h3>
                 </figcaption>
@@ -623,7 +475,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="grid">
             <figure class="effect-apollo">
               <div class="example-image-link" data-lightbox="example-set" data-title="">
-                <img src="images/ExtendLivingShowroom/p2.jpg" alt="" />
+                <img src="images/ExtendLivingShowroom/p2.jpg" alt="">
                 <figcaption>
                   <h3>Living room</h3>
                 </figcaption>
@@ -635,7 +487,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="grid">
             <figure class="effect-apollo">
               <div class="example-image-link" data-lightbox="example-set" data-title="">
-                <img src="images/ExtendLivingShowroom/p3.jpg" alt="" />
+                <img src="images/ExtendLivingShowroom/p3.jpg" alt="">
                 <figcaption>
                   <h3>Living room</h3>
                 </figcaption>
@@ -646,13 +498,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="clearfix"> </div>
       </div>
 
-<<<<<<< HEAD
     </div>
   </div>
   <!-- //ExtendLivingShowroom -->
 
   <!-- ExtendDiningShowroom -->
-  <div class="gallery" id="ExtendDiningShowroom" ng-show="showroomServices">
+  <div class="gallery ng-hide" id="ExtendDiningShowroom" ng-show="showroomServices">
     <div class="container">
       <h4>Dining room <span>Gallery</span></h4>
       <div class="gallery-grids">
@@ -660,37 +511,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="grid">
             <figure class="effect-apollo">
               <div class="example-image-link" data-lightbox="example-set" data-title="">
-                <img src="images/ExtendDiningShowroom/p1.jpg" alt="" />
-                <figcaption>
-                  <h3>Dining room</h3>
-                </figcaption>
-              </div>
-            </figure>
-=======
-    <!-- ExtendDiningShowroom -->
-    <div class="gallery" id="ExtendDiningShowroom" ng-show="showroomServices">
-      <div class="container">
-        <h4>Dining room <span>Gallery</span></h4>
-        <div class="gallery-grids">
-          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-            <div class="grid">
-              <figure class="effect-apollo">
-                <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendDiningShowroom/p1.jpg" alt="" />
-                  <figcaption>
-                    <h3>Dining room</h3>
-                  </figcaption>
-                </div>
-              </figure>
-            </div>
->>>>>>> 28d9b15dbcb7cd0315ce11294a52d4c223b92fd0
-          </div>
-        </div>
-        <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-          <div class="grid">
-            <figure class="effect-apollo">
-              <div class="example-image-link" data-lightbox="example-set" data-title="">
-                <img src="images/ExtendDiningShowroom/p2.jpg" alt="" />
+                <img src="images/ExtendDiningShowroom/p1.jpg" alt="">
                 <figcaption>
                   <h3>Dining room</h3>
                 </figcaption>
@@ -702,7 +523,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="grid">
             <figure class="effect-apollo">
               <div class="example-image-link" data-lightbox="example-set" data-title="">
-                <img src="images/ExtendDiningShowroom/p3.jpg" alt="" />
+                <img src="images/ExtendDiningShowroom/p2.jpg" alt="">
+                <figcaption>
+                  <h3>Dining room</h3>
+                </figcaption>
+              </div>
+            </figure>
+          </div>
+        </div>
+        <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+          <div class="grid">
+            <figure class="effect-apollo">
+              <div class="example-image-link" data-lightbox="example-set" data-title="">
+                <img src="images/ExtendDiningShowroom/p3.jpg" alt="">
                 <figcaption>
                   <h3>Dining room</h3>
                 </figcaption>
@@ -718,7 +551,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   <!-- //ExtendDiningShowroom -->
 
   <!-- ExtendBedRoomShowroom -->
-  <div class="gallery" id="ExtendBedRoomShowroom" ng-show="showroomServices">
+  <div class="gallery ng-hide" id="ExtendBedRoomShowroom" ng-show="showroomServices">
     <div class="container">
       <h4>Bedroom <span>Gallery</span></h4>
       <div class="gallery-grids">
@@ -726,7 +559,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="grid">
             <figure class="effect-apollo">
               <div class="example-image-link" data-lightbox="example-set" data-title="">
-                <img src="images/ExtendBedRoomShowroom/p1.jpg" alt="" />
+                <img src="images/ExtendBedRoomShowroom/p1.jpg" alt="">
                 <figcaption>
                   <h3>Bedroom</h3>
                 </figcaption>
@@ -738,7 +571,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="grid">
             <figure class="effect-apollo">
               <div class="example-image-link" data-lightbox="example-set" data-title="">
-                <img src="images/ExtendBedRoomShowroom/p2.jpg" alt="" />
+                <img src="images/ExtendBedRoomShowroom/p2.jpg" alt="">
                 <figcaption>
                   <h3>Bedroom</h3>
                 </figcaption>
@@ -750,7 +583,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="grid">
             <figure class="effect-apollo">
               <div class="example-image-link" data-lightbox="example-set" data-title="">
-                <img src="images/ExtendBedRoomShowroom/p3.jpg" alt="" />
+                <img src="images/ExtendBedRoomShowroom/p3.jpg" alt="">
                 <figcaption>
                   <h3>Bedroom</h3>
                 </figcaption>
@@ -766,7 +599,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   <!-- //ExtendBedRoomShowroom -->
 
   <!-- ExtendArtifactShowroom -->
-  <div class="gallery" id="ExtendArtifactShowroom" ng-show="showroomServices">
+  <div class="gallery ng-hide" id="ExtendArtifactShowroom" ng-show="showroomServices">
     <div class="container">
       <h4>Artifact <span>Gallery</span></h4>
       <div class="gallery-grids">
@@ -776,7 +609,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="grid">
             <figure class="effect-apollo">
               <div class="example-image-link" data-lightbox="example-set" data-title="">
-                <img src="images/ExtendArtifactShowroom/p1.jpg" alt="" />
+                <img src="images/ExtendArtifactShowroom/p1.jpg" alt="">
                 <figcaption>
                   <h3>Artifact</h3>
                 </figcaption>
@@ -789,7 +622,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="clearfix"> </div>
       </div>
 
-<<<<<<< HEAD
     </div>
   </div>
   <!-- //ExtendArtifactShowroom -->
@@ -802,20 +634,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
           <div class="grid">
             <a href="#ExtendLivingInteriorDesign" ng-click="ExtendLivingInteriorDesign=true">
-=======
-    <!-- ExtendBedRoomShowroom -->
-    <div class="gallery" id="ExtendBedRoomShowroom" ng-show="showroomServices">
-      <div class="container">
-        <h4>Bedroom <span>Gallery</span></h4>
-        <div class="gallery-grids">
-          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-            <div class="grid">
->>>>>>> 28d9b15dbcb7cd0315ce11294a52d4c223b92fd0
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/interiorDesign/living/p1.jpg" alt="" />
+                  <img src="images/interiorDesign/living/p1.jpg" alt="">
                   <figcaption>
-                    <h3>Living & Dining room</h3>
+                    <h3>Living &amp; Dining room</h3>
                   </figcaption>
                 </div>
               </figure>
@@ -827,7 +650,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <a href="#ExtendBedroomInteriorDesign" ng-click="ExtendBedroomInteriorDesign=true">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/interiorDesign/bedroom/p1.jpg" alt="" />
+                  <img src="images/interiorDesign/bedroom/p1.jpg" alt="">
                   <figcaption>
                     <h3>Bed room</h3>
                   </figcaption>
@@ -841,7 +664,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <a href="#ExtendKitchenInteriorDesign" ng-click="ExtendKitchenInteriorDesign=true">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/interiorDesign/kitchen/p1.jpg" alt="" />
+                  <img src="images/interiorDesign/kitchen/p1.jpg" alt="">
                   <figcaption>
                     <h3>Kitchen</h3>
                   </figcaption>
@@ -850,27 +673,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </a>
           </div>
         </div>
-<<<<<<< HEAD
         <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
           <div class="grid">
             <a href="#ExtendToiletInteriorDesign" ng-click="ExtendToiletInteriorDesign=true">
-=======
-
-      </div>
-    </div>
-    <!-- //ExtendBedRoomShowroom -->
-
-    <!-- ExtendArtifactShowroom -->
-    <div class="gallery" id="ExtendArtifactShowroom" ng-show="showroomServices">
-      <div class="container">
-        <h4>Artifact <span>Gallery</span></h4>
-        <div class="gallery-grids">
-          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-            <div class="grid">
->>>>>>> 28d9b15dbcb7cd0315ce11294a52d4c223b92fd0
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/interiorDesign/toilet/p1.jpg" alt="" />
+                  <img src="images/interiorDesign/toilet/p1.jpg" alt="">
                   <figcaption>
                     <h3>Toilet</h3>
                   </figcaption>
@@ -884,7 +692,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <a href="#ExtendProductDesignInteriorDesign" ng-click="ExtendProductDesignInteriorDesign=true">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/interiorDesign/productDesign/p1.jpg" alt="" />
+                  <img src="images/interiorDesign/productDesign/p1.jpg" alt="">
                   <figcaption>
                     <h3>Product Design</h3>
                   </figcaption>
@@ -898,7 +706,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <a href="#ExtendCommercialInteriorDesign" ng-click="ExtendCommercialInteriorDesign=true">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/interiorDesign/commercial/p1.jpg" alt="" />
+                  <img src="images/interiorDesign/commercial/p1.jpg" alt="">
                   <figcaption>
                     <h3>Commercial / Retail</h3>
                   </figcaption>
@@ -910,56 +718,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="clearfix"> </div>
       </div>
     </div>
-<<<<<<< HEAD
   </div>
   <!-- //interiorDesigngallery -->
 
   <!-- ExtendLivingInteriorDesign -->
   <div class="gallery" id="ExtendLivingInteriorDesign" ng-show="interiorDesignServices">
     <div class="container">
-      <h4>Living & Dining room <span>Gallery</span></h4>
+      <h4>Living &amp; Dining room <span>Gallery</span></h4>
       <div class="gallery-grids">
         <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
           <div class="grid">
             <figure class="effect-apollo">
               <div class="example-image-link" data-lightbox="example-set" data-title="">
-                <img src="images/ExtendLivingInteriorDesign/p1.jpg" alt="" />
+                <img src="images/ExtendLivingInteriorDesign/p1.jpg" alt="">
                 <figcaption>
-                  <h3>Living & Dining room</h3>
-                </figcaption>
-              </div>
-            </figure>
-=======
-    <!-- //ExtendArtifactShowroom -->
-
-    <!-- interiorDesigngallery -->
-    <div class="gallery" id="interiorDesign" ng-show="interiorDesignServices">
-      <div class="container">
-        <h2 class="tittle">Interior Design <span>Gallery</span></h2>
-        <div class="gallery-grids">
-          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-            <div class="grid">
-              <a href="#ExtendLivingInteriorDesign" ng-click="ExtendLivingInteriorDesign=true">
-                <figure class="effect-apollo">
-                  <div class="example-image-link" data-lightbox="example-set" data-title="">
-                    <img src="images/interiorDesign/living/p1.jpg" alt="" />
-                    <figcaption>
-                      <h3>Living & Dining room</h3>
-                    </figcaption>
-                  </div>
-                </figure>
-              </a>
-            </div>
->>>>>>> 28d9b15dbcb7cd0315ce11294a52d4c223b92fd0
-          </div>
-        </div>
-        <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-          <div class="grid">
-            <figure class="effect-apollo">
-              <div class="example-image-link" data-lightbox="example-set" data-title="">
-                <img src="images/ExtendLivingInteriorDesign/p3.jpg" alt="" />
-                <figcaption>
-                  <h3>Living & Dining room</h3>
+                  <h3>Living &amp; Dining room</h3>
                 </figcaption>
               </div>
             </figure>
@@ -969,9 +742,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="grid">
             <figure class="effect-apollo">
               <div class="example-image-link" data-lightbox="example-set" data-title="">
-                <img src="images/ExtendLivingInteriorDesign/p5.jpg" alt="" />
+                <img src="images/ExtendLivingInteriorDesign/p3.jpg" alt="">
                 <figcaption>
-                  <h3>Living & Dining room</h3>
+                  <h3>Living &amp; Dining room</h3>
                 </figcaption>
               </div>
             </figure>
@@ -981,9 +754,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="grid">
             <figure class="effect-apollo">
               <div class="example-image-link" data-lightbox="example-set" data-title="">
-                <img src="images/ExtendLivingInteriorDesign/p6.jpg" alt="" />
+                <img src="images/ExtendLivingInteriorDesign/p5.jpg" alt="">
                 <figcaption>
-                  <h3>Living & Dining room</h3>
+                  <h3>Living &amp; Dining room</h3>
                 </figcaption>
               </div>
             </figure>
@@ -993,9 +766,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="grid">
             <figure class="effect-apollo">
               <div class="example-image-link" data-lightbox="example-set" data-title="">
-                <img src="images/ExtendLivingInteriorDesign/p7.jpg" alt="" />
+                <img src="images/ExtendLivingInteriorDesign/p6.jpg" alt="">
                 <figcaption>
-                  <h3>Living & Dining room</h3>
+                  <h3>Living &amp; Dining room</h3>
                 </figcaption>
               </div>
             </figure>
@@ -1005,9 +778,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="grid">
             <figure class="effect-apollo">
               <div class="example-image-link" data-lightbox="example-set" data-title="">
-                <img src="images/ExtendLivingInteriorDesign/p8.jpg" alt="" />
+                <img src="images/ExtendLivingInteriorDesign/p7.jpg" alt="">
                 <figcaption>
-                  <h3>Living & Dining room</h3>
+                  <h3>Living &amp; Dining room</h3>
                 </figcaption>
               </div>
             </figure>
@@ -1017,9 +790,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="grid">
             <figure class="effect-apollo">
               <div class="example-image-link" data-lightbox="example-set" data-title="">
-                <img src="images/ExtendLivingInteriorDesign/p9.jpg" alt="" />
+                <img src="images/ExtendLivingInteriorDesign/p8.jpg" alt="">
                 <figcaption>
-                  <h3>Living & Dining room</h3>
+                  <h3>Living &amp; Dining room</h3>
+                </figcaption>
+              </div>
+            </figure>
+          </div>
+        </div>
+        <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+          <div class="grid">
+            <figure class="effect-apollo">
+              <div class="example-image-link" data-lightbox="example-set" data-title="">
+                <img src="images/ExtendLivingInteriorDesign/p9.jpg" alt="">
+                <figcaption>
+                  <h3>Living &amp; Dining room</h3>
                 </figcaption>
               </div>
             </figure>
@@ -1028,7 +813,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="clearfix"> </div>
       </div>
 
-<<<<<<< HEAD
     </div>
   </div>
   <!-- //ExtendLivingInteriorDesign -->
@@ -1042,61 +826,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="grid">
             <figure class="effect-apollo">
               <div class="example-image-link" data-lightbox="example-set" data-title="">
-                <img src="images/ExtendBedroomInteriorDesign/p1.jpg" alt="" />
-                <figcaption>
-                  <h3>Bedroom</h3>
-                </figcaption>
-              </div>
-            </figure>
-=======
-    <!-- ExtendLivingInteriorDesign -->
-    <div class="gallery" id="ExtendLivingInteriorDesign" ng-show="interiorDesignServices">
-      <div class="container">
-        <h4>Living & Dining room <span>Gallery</span></h4>
-        <div class="gallery-grids">
-          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-            <div class="grid">
-              <figure class="effect-apollo">
-                <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendLivingInteriorDesign/p1.jpg" alt="" />
-                  <figcaption>
-                    <h3>Living & Dining room</h3>
-                  </figcaption>
-                </div>
-              </figure>
-            </div>
-          </div>
-          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-            <div class="grid">
-              <figure class="effect-apollo">
-                <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendLivingInteriorDesign/p2.jpg" alt="" />
-                  <figcaption>
-                    <h3>Living & Dining room</h3>
-                  </figcaption>
-                </div>
-              </figure>
-            </div>
-          </div>
-          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-            <div class="grid">
-              <figure class="effect-apollo">
-                <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendLivingInteriorDesign/p3.jpg" alt="" />
-                  <figcaption>
-                    <h3>Living & Dining room</h3>
-                  </figcaption>
-                </div>
-              </figure>
-            </div>
->>>>>>> 28d9b15dbcb7cd0315ce11294a52d4c223b92fd0
-          </div>
-        </div>
-        <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-          <div class="grid">
-            <figure class="effect-apollo">
-              <div class="example-image-link" data-lightbox="example-set" data-title="">
-                <img src="images/ExtendBedroomInteriorDesign/p2.jpg" alt="" />
+                <img src="images/ExtendBedroomInteriorDesign/p1.jpg" alt="">
                 <figcaption>
                   <h3>Bedroom</h3>
                 </figcaption>
@@ -1108,7 +838,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <div class="grid">
             <figure class="effect-apollo">
               <div class="example-image-link" data-lightbox="example-set" data-title="">
-                <img src="images/ExtendBedroomInteriorDesign/p3.jpg" alt="" />
+                <img src="images/ExtendBedroomInteriorDesign/p2.jpg" alt="">
+                <figcaption>
+                  <h3>Bedroom</h3>
+                </figcaption>
+              </div>
+            </figure>
+          </div>
+        </div>
+        <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+          <div class="grid">
+            <figure class="effect-apollo">
+              <div class="example-image-link" data-lightbox="example-set" data-title="">
+                <img src="images/ExtendBedroomInteriorDesign/p3.jpg" alt="">
                 <figcaption>
                   <h3>Bedroom</h3>
                 </figcaption>
@@ -1122,7 +864,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="grid">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendBedroomInteriorDesign/p4.jpg" alt="" />
+                  <img src="images/ExtendBedroomInteriorDesign/p4.jpg" alt="">
                   <figcaption>
                     <h3>Bedroom</h3>
                   </figcaption>
@@ -1134,7 +876,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="grid">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendBedroomInteriorDesign/p5.jpg" alt="" />
+                  <img src="images/ExtendBedroomInteriorDesign/p5.jpg" alt="">
                   <figcaption>
                     <h3>Bedroom</h3>
                   </figcaption>
@@ -1146,7 +888,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="grid">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendBedroomInteriorDesign/p6.jpg" alt="" />
+                  <img src="images/ExtendBedroomInteriorDesign/p6.jpg" alt="">
                   <figcaption>
                     <h3>Bedroom</h3>
                   </figcaption>
@@ -1161,13 +903,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
     <!-- //ExtendBedroomInteriorDesign -->
 
-<<<<<<< HEAD
     <!-- ExtendKitchenInteriorDesign -->
     <div class="gallery" id="ExtendKitchenInteriorDesign" ng-show="interiorDesignServices">
-=======
-    <!-- ExtendBedroomInteriorDesign -->
-    <div class="gallery" id="ExtendBedroomInteriorDesign" ng-show="interiorDesignServices">
->>>>>>> 28d9b15dbcb7cd0315ce11294a52d4c223b92fd0
       <div class="container">
         <h4>Kitchen <span>Gallery</span></h4>
         <div class="gallery-grids">
@@ -1175,7 +912,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="grid">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendKitchenInteriorDesign/p1.jpg" alt="" />
+                  <img src="images/ExtendKitchenInteriorDesign/p1.jpg" alt="">
                   <figcaption>
                     <h3>Kitchen</h3>
                   </figcaption>
@@ -1187,7 +924,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="grid">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendKitchenInteriorDesign/p2.jpg" alt="" />
+                  <img src="images/ExtendKitchenInteriorDesign/p2.jpg" alt="">
                   <figcaption>
                     <h3>Kitchen</h3>
                   </figcaption>
@@ -1195,58 +932,43 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               </figure>
             </div>
           </div>
-<<<<<<< HEAD
-=======
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendKitchenInteriorDesign/p3.jpg" alt="">
+                  <figcaption>
+                    <h3>Kitchen</h3>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendKitchenInteriorDesign/p4.jpg" alt="">
+                  <figcaption>
+                    <h3>Kitchen</h3>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+            <div class="grid">
+              <figure class="effect-apollo">
+                <div class="example-image-link" data-lightbox="example-set" data-title="">
+                  <img src="images/ExtendKitchenInteriorDesign/p5.jpg" alt="">
+                  <figcaption>
+                    <h3>Kitchen</h3>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
           <div class="clearfix"> </div>
-        </div>
-
-      </div>
-    </div>
-    <!-- //ExtendBedroomInteriorDesign -->
-
-    <!-- ExtendKitchenInteriorDesign -->
-    <div class="gallery" id="ExtendKitchenInteriorDesign" ng-show="interiorDesignServices">
-      <div class="container">
-        <h4>Kitchen <span>Gallery</span></h4>
-        <div class="gallery-grids">
->>>>>>> 28d9b15dbcb7cd0315ce11294a52d4c223b92fd0
-          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-            <div class="grid">
-              <figure class="effect-apollo">
-                <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendKitchenInteriorDesign/p3.jpg" alt="" />
-                  <figcaption>
-                    <h3>Kitchen</h3>
-                  </figcaption>
-                </div>
-              </figure>
-            </div>
-          </div>
-          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-            <div class="grid">
-              <figure class="effect-apollo">
-                <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendKitchenInteriorDesign/p4.jpg" alt="" />
-                  <figcaption>
-                    <h3>Kitchen</h3>
-                  </figcaption>
-                </div>
-              </figure>
-            </div>
-          </div>
-          <div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
-            <div class="grid">
-              <figure class="effect-apollo">
-                <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendKitchenInteriorDesign/p5.jpg" alt="" />
-                  <figcaption>
-                    <h3>Kitchen</h3>
-                  </figcaption>
-                </div>
-              </figure>
-            </div>
-          </div>
-                    <div class="clearfix"> </div>
         </div>
 
       </div>
@@ -1262,7 +984,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="grid">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendToiletInteriorDesign/p1.jpg" alt="" />
+                  <img src="images/ExtendToiletInteriorDesign/p1.jpg" alt="">
                   <figcaption>
                     <h3>Toilet</h3>
                   </figcaption>
@@ -1274,7 +996,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="grid">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendToiletInteriorDesign/p2.jpg" alt="" />
+                  <img src="images/ExtendToiletInteriorDesign/p2.jpg" alt="">
                   <figcaption>
                     <h3>Toilet</h3>
                   </figcaption>
@@ -1286,7 +1008,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="grid">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendToiletInteriorDesign/p3.jpg" alt="" />
+                  <img src="images/ExtendToiletInteriorDesign/p3.jpg" alt="">
                   <figcaption>
                     <h3>Toilet</h3>
                   </figcaption>
@@ -1310,7 +1032,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="grid">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendProductDesignInteriorDesign/p1.jpg" alt="" />
+                  <img src="images/ExtendProductDesignInteriorDesign/p1.jpg" alt="">
                   <figcaption>
                     <h3>Product Design</h3>
                   </figcaption>
@@ -1322,7 +1044,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="grid">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendProductDesignInteriorDesign/p2.jpg" alt="" />
+                  <img src="images/ExtendProductDesignInteriorDesign/p2.jpg" alt="">
                   <figcaption>
                     <h3>Product Design</h3>
                   </figcaption>
@@ -1334,7 +1056,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="grid">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendProductDesignInteriorDesign/p3.jpg" alt="" />
+                  <img src="images/ExtendProductDesignInteriorDesign/p3.jpg" alt="">
                   <figcaption>
                     <h3>Product Design</h3>
                   </figcaption>
@@ -1346,7 +1068,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="grid">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendProductDesignInteriorDesign/p4.jpg" alt="" />
+                  <img src="images/ExtendProductDesignInteriorDesign/p4.jpg" alt="">
                   <figcaption>
                     <h3>Product Design</h3>
                   </figcaption>
@@ -1358,7 +1080,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="grid">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendProductDesignInteriorDesign/p5.jpg" alt="" />
+                  <img src="images/ExtendProductDesignInteriorDesign/p5.jpg" alt="">
                   <figcaption>
                     <h3>Product Design</h3>
                   </figcaption>
@@ -1370,7 +1092,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="grid">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendProductDesignInteriorDesign/p6.jpg" alt="" />
+                  <img src="images/ExtendProductDesignInteriorDesign/p6.jpg" alt="">
                   <figcaption>
                     <h3>Product Design</h3>
                   </figcaption>
@@ -1394,7 +1116,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="grid">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendCommercialInteriorDesign/p1.jpg" alt="" />
+                  <img src="images/ExtendCommercialInteriorDesign/p1.jpg" alt="">
                   <figcaption>
                     <h3>Commercial</h3>
                   </figcaption>
@@ -1406,7 +1128,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="grid">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendCommercialInteriorDesign/p2.jpg" alt="" />
+                  <img src="images/ExtendCommercialInteriorDesign/p2.jpg" alt="">
                   <figcaption>
                     <h3>Commercial</h3>
                   </figcaption>
@@ -1418,7 +1140,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="grid">
               <figure class="effect-apollo">
                 <div class="example-image-link" data-lightbox="example-set" data-title="">
-                  <img src="images/ExtendCommercialInteriorDesign/p3.jpg" alt="" />
+                  <img src="images/ExtendCommercialInteriorDesign/p3.jpg" alt="">
                   <figcaption>
                     <h3>Commercial</h3>
                   </figcaption>
@@ -1431,148 +1153,150 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
       </div>
     </div>
-    <!-- //ExtendCommercialInteriorDesign -->
+  </div>
+  <!-- //ExtendCommercialInteriorDesign -->
 
-    <div class="projects">
-      <div class="container">
-        <h3 class="tittle">Recent <span>Projects</span></h3>
-        <div class="projects-inner">
-          <div class="col-md-7 banner-slider">
-            <div class="callbacks_container">
-              <ul class="rslides" id="slider3">
-                <li>
-                  <div class="blog-img">
-                    <img src="images/RecentProjects/p1.jpg" class="img-responsive" alt="" />
-                  </div>
+  <div class="projects">
+    <div class="container">
+      <h3 class="tittle">Recent <span>Projects</span></h3>
+      <div class="projects-inner">
+        <div class="col-md-7 banner-slider">
+          <div class="callbacks_container">
+            <ul class="rslides callbacks callbacks1" id="slider3">
+              <li id="callbacks1_s0" class="" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out;">
+                <div class="blog-img">
+                  <img src="images/RecentProjects/p1.jpg" class="img-responsive" alt="">
+                </div>
 
-                </li>
-                <li>
-                  <div class="blog-img">
-                    <img src="images/RecentProjects/p2.jpg" class="img-responsive" alt="" />
-                  </div>
+              </li>
+              <li id="callbacks1_s1" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out;"
+                class="">
+                <div class="blog-img">
+                  <img src="images/RecentProjects/p2.jpg" class="img-responsive" alt="">
+                </div>
 
-                </li>
-                <li>
-                  <div class="blog-img">
-                    <img src="images/RecentProjects/p3.jpg" class="img-responsive" alt="" />
-                  </div>
+              </li>
+              <li id="callbacks1_s2" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out;"
+                class="">
+                <div class="blog-img">
+                  <img src="images/RecentProjects/p3.jpg" class="img-responsive" alt="">
+                </div>
 
-                </li>
-                <li>
-                  <div class="blog-img">
-                    <img src="images/RecentProjects/p4.jpg" class="img-responsive" alt="" />
-                  </div>
+              </li>
+              <li id="callbacks1_s3" style="display: block; float: left; position: relative; opacity: 1; z-index: 2; transition: opacity 500ms ease-in-out;"
+                class="callbacks1_on">
+                <div class="blog-img">
+                  <img src="images/RecentProjects/p4.jpg" class="img-responsive" alt="">
+                </div>
 
-                </li>
-              </ul>
-            </div>
+              </li>
+            </ul><a href="#" class="callbacks_nav callbacks1_nav prev">Previous</a><a href="#" class="callbacks_nav callbacks1_nav next">Next</a>
           </div>
-          <div class="col-md-5 ban-text">
-            <div class="choose">
-              <div class="choose_img">
-                <h3>You'll love our work!</h3>
-                <!-- choose icon -->
-                <div class="choose_icon">
-                  <div class="choose_left">
-                    <span class="glyphicon glyphicon-home"></span>
-                  </div>
-                  <div class="choose_right">
-                    <p>Homely designs</p>
-                  </div>
-                  <div class="clearfix"></div>
+        </div>
+        <div class="col-md-5 ban-text">
+          <div class="choose">
+            <div class="choose_img">
+              <h3>You'll love our work!</h3>
+              <!-- choose icon -->
+              <div class="choose_icon">
+                <div class="choose_left">
+                  <span class="glyphicon glyphicon-home"></span>
                 </div>
+                <div class="choose_right">
+                  <p>Homely designs</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
 
-                <!-- choose icon -->
-                <div class="choose_icon">
-                  <div class="choose_left">
-                    <span class="glyphicon glyphicon-pencil"></span>
-                  </div>
-                  <div class="choose_right">
-                    <p>Customized solutions</p>
-                  </div>
-                  <div class="clearfix"></div>
+              <!-- choose icon -->
+              <div class="choose_icon">
+                <div class="choose_left">
+                  <span class="glyphicon glyphicon-pencil"></span>
                 </div>
+                <div class="choose_right">
+                  <p>Customized solutions</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
 
-                <!-- choose icon -->
-                <div class="choose_icon">
-                  <div class="choose_left">
-                    <span class="glyphicon glyphicon-heart-empty"></span>
-                  </div>
-                  <div class="choose_right">
-                    <p>Designed with love</p>
-                  </div>
-                  <div class="clearfix"></div>
+              <!-- choose icon -->
+              <div class="choose_icon">
+                <div class="choose_left">
+                  <span class="glyphicon glyphicon-heart-empty"></span>
                 </div>
+                <div class="choose_right">
+                  <p>Designed with love</p>
+                </div>
+                <div class="clearfix"></div>
               </div>
             </div>
           </div>
-          <div class="clearfix"></div>
         </div>
-        <!--banner Slider starts Here-->
-        <script src="js/responsiveslides.min.js"></script>
-        <script>
-          // You can also use "$(window).load(function() {"
-          $(function () {
-            // Slideshow 3
-            $("#slider3").responsiveSlides({
-              auto: true,
-              pager: false,
-              nav: true,
-              speed: 500,
-              namespace: "callbacks",
-              before: function () {
-                $('.events').append("<li>before event fired.</li>");
-              },
-              after: function () {
-                $('.events').append("<li>after event fired.</li>");
-              }
-            });
-
-          });
-        </script>
+        <div class="clearfix"></div>
       </div>
-    </div>
-    <!--footer-->
-    <div class="footer" id="contact">
-      <div class="container">
-        <div class="row footer-top">
-          <div class="col-md-7 amet-sed ">
+      <!--banner Slider starts Here-->
+      <script src="js/responsiveslides.min.js"></script>
+      <script>
+        // You can also use "$(window).load(function() {"
+        $(function () {
+          // Slideshow 3
+          $("#slider3").responsiveSlides({
+            auto: true,
+            pager: false,
+            nav: true,
+            speed: 500,
+            namespace: "callbacks",
+            before: function () {
+              $('.events').append("<li>before event fired.</li>");
+            },
+            after: function () {
+              $('.events').append("<li>after event fired.</li>");
+            }
+          });
 
-            <!--map-->
-            <div class="map wow fadeInDown" data-wow-duration=".8s" data-wow-delay=".5s">
-              <h2 class="tittle"><span>Find Us</span></h2>
-<<<<<<< HEAD
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.5206196737195!2d72.82608991490198!3d19.12867508705769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf47b3cdf7a118093!2sAhmed+Khan+%26+Associates!5e0!3m2!1sen!2s!4v1492087984746"
-                width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
-              </iframe>
-=======
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.5206196737195!2d72.82608991490198!3d19.12867508705769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf47b3cdf7a118093!2sAhmed+Khan+%26+Associates!5e0!3m2!1sen!2s!4v1492087984746" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
->>>>>>> 28d9b15dbcb7cd0315ce11294a52d4c223b92fd0
-            </div>
-            <!--//map-->
-            <div class="clearfix"> </div>
+        });
+      </script>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="footer" id="contact">
+    <div class="container">
+      <div class="row footer-top">
+        <div class="col-md-7 amet-sed ">
+
+          <!--map-->
+          <div class="map wow fadeInDown" data-wow-duration=".8s" data-wow-delay=".5s">
+            <h2 class="tittle"><span>Find Us</span></h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.5206196737195!2d72.82608991490198!3d19.12867508705769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf47b3cdf7a118093!2sAhmed+Khan+%26+Associates!5e0!3m2!1sen!2s!4v1492087984746"
+              width="600" height="450" frameborder="0" style="border:0" allowfullscreen="">
+            </iframe>
           </div>
-          <div class="col-md-3 amet-sed">
-            <h2 class="tittle"><span>SAZ Interiors<span></h2>
-            <ul class="social">
-              <li><i class="glyphicon glyphicon-home"> </i>JP Road, 7 Bunglows, Model Town, Andheri - west, Mumbai - 53</li>
-              <li class="tele-phone"><i class="glyphicon glyphicon-earphone"></i><a href="tel:+918082298354">80822 98354, </a><a href="tel:+919768240771">97682 40771</a></li>
-              <li class="mail"><a href="mailto:khanahmed2522@gmail.com"><i class="glyphicon glyphicon-envelope"> </i>khanahmed2522@gmail.com</a></li>
-            </ul>
-            <h2 style="margin-top:1em;" class="tittle"><span>Follow<span></h2>
-            <ul class="social-icons2 wow slideInDown" data-wow-duration="1s" data-wow-delay=".3s">
-              <li>
-                <a href="http://twitter.com/SAZInteriors" class="tw"></a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/SAZInteriors" class="fb"> </a>
-              </li>
-              <li>
-                <a href="https://plus.google.com/112568137907539310140" class="in"></a>
-              </li>
-              <div class="clearfix"></div>
-            </ul>
-            <!--<div class="support">
+          <!--//map-->
+          <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-3 amet-sed">
+          <h2 class="tittle"><span>SAZ Interiors<span></span></span>
+          </h2>
+          <ul class="social">
+            <li><i class="glyphicon glyphicon-home"> </i>JP Road, 7 Bunglows, Model Town, Andheri - west, Mumbai - 53</li>
+            <li class="tele-phone"><i class="glyphicon glyphicon-earphone"></i><a href="tel:+918082298354">80822 98354, </a><a href="tel:+919768240771">97682 40771</a></li>
+            <li class="mail"><a href="mailto:khanahmed2522@gmail.com"><i class="glyphicon glyphicon-envelope"> </i>khanahmed2522@gmail.com</a></li>
+          </ul>
+          <h2 style="margin-top:1em;" class="tittle"><span>Follow<span></span></span>
+          </h2>
+          <ul class="social-icons2 wow slideInDown" data-wow-duration="1s" data-wow-delay=".3s">
+            <li>
+              <a href="http://twitter.com/SAZInteriors" class="tw"></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/SAZInteriors" class="fb"> </a>
+            </li>
+            <li>
+              <a href="https://plus.google.com/112568137907539310140" class="in"></a>
+            </li>
+            <div class="clearfix"></div>
+          </ul>
+          <!--<div class="support">
 									<form action="#" method="post">
 										<input type="text" placeholder="Enter email...." required="">
 
@@ -1581,39 +1305,41 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 
 							</form></div>-->
-          </div>
         </div>
-        <p class="footer-class">
-          © <span id="currYear">2017</span> SAZ Interiors. All Rights Reserved | Site design: <a href="https://w3layouts.com/inventive-design-interior-category-flat-bootstrap-responsive-web-template/">W3layouts</a>              | Logo design: <a href="https://dribbble.com/shots/1521089-Chair">Wharf</a> | Developed by: <a href="http://nordible.com"> nordible </a>              v1.0.1 </p>
-          </div>
-        </div>
-        <!--start-smooth-scrolling-->
-        <script type="text/javascript">
-          $(document).ready(function () {
-            /*
-                        var defaults = {
-                            containerID: 'toTop', // fading element id
-                          containerHoverID: 'toTopHover', // fading element hover id
-                          scrollSpeed: 1200,
-                          easingType: 'linear'
-                          };
-                        */
+      </div>
+      <p class="footer-class">
+        © <span id="currYear">2017</span> SAZ Interiors. All Rights Reserved | Site design: <a href="https://w3layouts.com/inventive-design-interior-category-flat-bootstrap-responsive-web-template/">W3layouts</a>        | Logo design: <a href="https://dribbble.com/shots/1521089-Chair">Wharf</a> | Developed by: <a href="http://nordible.com"> nordible </a>        v1.0.1 </p>
+    </div>
+  </div>
+  <!--start-smooth-scrolling-->
+  <script type="text/javascript">
+        $(document).ready(function () {
+          /*
+                      var defaults = {
+                          containerID: 'toTop', // fading element id
+                        containerHoverID: 'toTopHover', // fading element hover id
+                        scrollSpeed: 1200,
+                        easingType: 'linear'
+                        };
+                      */
 
-            $().UItoTop({
-              easingType: 'easeOutQuart'
-            });
-
+          $().UItoTop({
+            easingType: 'easeOutQuart'
           });
-        </script>
-        <!--end-smooth-scrolling-->
-        <a href="#house" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-        <script src="js/bootstrap.js"></script>
-</body>
 
-</html>
-<!--mooth-scrolling-->
-<a href="#house" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<script src="js/bootstrap.js"></script>
-</body>
+        });
+  </script>
+  <!--end-smooth-scrolling-->
+  <a href="#house" id="toTop" class="scroll" style="display: block;"><span id="toTopHover"></span> <span id="toTopHover" style="opacity: 1;"> </span></a>
+  <script src="js/bootstrap.js"></script>
+
+
+
+  <!--mooth-scrolling-->
+  <a href="#house" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+  <script src="js/bootstrap.js"></script>
+
+
+  </div><a href="#" id="toTop">To Top</a></body>
 
 </html>
