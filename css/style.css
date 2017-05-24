@@ -1218,7 +1218,7 @@ a.hi-icon img {
     word-spacing: 0.4em;
     font-weight: 300;
     margin: 0;
-    text-align: left;
+    /*text-align: left;*/
     font-size: 1.2em;
 }
 
@@ -2490,7 +2490,7 @@ ul.social li a{
 		word-spacing: -0.15em;
 		font-weight: 300;
 		margin: 0;
-		text-align: left;
+		/*text-align: left;*/
 		font-size: 1em;
 	}
 	.grid figure p {
@@ -2646,7 +2646,7 @@ ul.social li a{
 		word-spacing: -0.15em;
 		font-weight: 300;
 		margin: 0;
-		text-align: left;
+		/*text-align: left;*/
 		font-size: 0.9em;
 	}
 	.single-middle {
